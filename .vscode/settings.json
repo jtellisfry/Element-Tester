@@ -1,0 +1,12 @@
+{
+  // Path to the project's virtualenv python executable (workspace-relative)
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+
+  // Ask the Python extension to activate the venv in new terminals
+  "python.terminal.activateEnvironment": true,
+
+  // Ensure the language server and import resolver look in ./src
+  "python.analysis.extraPaths": [
+    "./src"
+  ]
+}

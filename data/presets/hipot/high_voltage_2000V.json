@@ -1,0 +1,8 @@
+{
+  "voltage_v": 2000.0,
+  "current_trip_mA": 8.0,
+  "ramp_time_s": 1.5,
+  "dwell_time_s": 2.0,
+  "fall_time_s": 1.0,
+  "polarity": "NEG"
+}
