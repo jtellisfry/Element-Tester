@@ -1,0 +1,68 @@
+('C:\\Files\\element tester\\Element_Tester\\build\\Element Tester\\Element '
+ 'Tester.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Files\\element tester\\Element_Tester\\build\\Element '
+   'Tester\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Files\\element tester\\Element_Tester\\build\\Element '
+   'Tester\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Files\\element tester\\Element_Tester\\build\\Element '
+   'Tester\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Files\\element tester\\Element_Tester\\build\\Element '
+   'Tester\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Files\\element tester\\Element_Tester\\build\\Element '
+   'Tester\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Files\\element tester\\Element_Tester\\build\\Element '
+   'Tester\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_pyqt6',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt6.py',
+   'PYSOURCE'),
+  ('test_runner',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\src\\element_tester\\system\\core\\test_runner.py',
+   'PYSOURCE')],
+ 'python313.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)

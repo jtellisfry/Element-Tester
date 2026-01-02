@@ -91,10 +91,12 @@ class ConfigurationWindow(QtWidgets.QDialog):
     # Manual mapping: keys are (voltage, wattage) tuples, values are (r_min_ohm, r_max_ohm).
     # Populate this mapping with the exact ranges you want for each combo.
     RESISTANCE_RANGE: dict[tuple[int, int], tuple[float, float]] = {
-        (208, 7000): (5.0/2, 8.9/2),
+        (208, 7000): (18.2/2, 19.6/2),
+        (230, 7000): (0.0/2, 0.0/2),
         (240, 7000): (11.0/2, 11.9/2),
         (480, 7000): (90.2/2, 91.2/2),
         (208, 8500): (15.0/2, 16.0/2),
+        (230, 8500): (18.0/2, 19.6/2),
         (240, 8500): (19.5/2, 21.5/2),
         (480, 8500): (79.8/2, 82.5/2),
     }

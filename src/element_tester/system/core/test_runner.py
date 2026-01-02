@@ -349,6 +349,11 @@ class TestRunner:
                 msg = "Operator cancelled before starting tests"
                 return False, msg, {"passed": False, "message": msg}, {}
 
+        # Initialize hipot_detail for error handling (hipot test should run here)
+        hip_detail = {"passed": False, "message": "Hipot test not run"}
+        hip_ok = False
+        hip_msg = "Hipot test not run"
+
         # Measurement test with unlimited retry logic ---------------------------------------------
         meas_ok = False
         meas_msg = ""
