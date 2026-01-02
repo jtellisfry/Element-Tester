@@ -27,12 +27,19 @@ except Exception as e:
     HipotConfig = None
     AR3865Driver = None
 
-# Optional relay driver
+# Optional ERB relay driver (used for measurements)
 try:
     from element_tester.system.drivers.relay_mcc.driver import ERB08Driver
 except Exception as e:
     logging.getLogger("element_tester.runner").error(f"Failed to import ERB08Driver: {e}", exc_info=True)
     ERB08Driver = None
+
+# Optional PDIS relay driver (used only for hipot sequences)
+try:
+    from element_tester.system.drivers.relay_mcc_pdis.driver import PDIS08Driver
+except Exception as e:
+    logging.getLogger("element_tester.runner").error(f"Failed to import PDIS08Driver: {e}", exc_info=True)
+    PDIS08Driver = None
 
 # Optional hipot test sequence
 try:
@@ -68,6 +75,12 @@ try:
 except Exception as e:
     logging.getLogger("element_tester.runner").error(f"Failed to import measurement_test_procedures: {e}", exc_info=True)
     meas_procs = None
+
+# Optional print helper for QC stickers (module-level import)
+try:
+    import element_tester.system.procedures.print_qc as print_qc
+except Exception:
+    print_qc = None
 
 
 def should_use_simulate_mode(work_order: str, part_number: str) -> bool:
@@ -129,7 +142,7 @@ class TestRunner:
         self.hipot_test_seq = None
         self.meter_driver = None
         
-        self.log.info(f"TestRunner.__init__ | simulate={simulate} | ERB08Driver={ERB08Driver is not None} | AR3865Driver={AR3865Driver is not None} | HipotTestSequence={HipotTestSequence is not None} | UT61EDriver={UT61EDriver is not None}")
+        self.log.info(f"TestRunner.__init__ | simulate={simulate} | ERB08Driver={ERB08Driver is not None} | PDIS08Driver={PDIS08Driver is not None} | AR3865Driver={AR3865Driver is not None} | HipotTestSequence={HipotTestSequence is not None} | UT61EDriver={UT61EDriver is not None}")
         
         if not simulate:
             # Initialize relay driver
@@ -141,11 +154,16 @@ class TestRunner:
                         port_high=relay_port_high,
                         simulate=False
                     )
-                    self.log.info("✓ Relay driver initialized")
+                    self.log.info("✓ Relay (ERB) driver initialized")
                 except Exception as e:
-                    self.log.error(f"✗ Failed to initialize relay driver: {e}", exc_info=True)
+                    self.log.error(f"✗ Failed to initialize ERB relay driver: {e}", exc_info=True)
             else:
                 self.log.error("✗ ERB08Driver not available (import failed)")
+
+            # NOTE: PDIS-specific initialization removed. If you need to
+            # initialize a separate hipot relay station, add that logic here.
+            # TODO: initialize PDIS08Driver(board_num=..., port_low=..., simulate=...)
+            self.pdis_relay = None
             
             # Initialize hipot driver
             if AR3865Driver is not None:
@@ -163,6 +181,9 @@ class TestRunner:
                 self.log.error("✗ AR3865Driver not available (import failed)")
             
             # Create hipot test sequence if both drivers available
+            # For hipot test sequence use the PDIS relay driver if available,
+            # otherwise fall back to the ERB relay driver.
+            # Create HipotTestSequence using the ERB relay driver only.
             if self.relay_driver and self.hipot_driver and HipotTestSequence:
                 try:
                     self.hipot_test_seq = HipotTestSequence(
@@ -170,7 +191,7 @@ class TestRunner:
                         hipot_driver=self.hipot_driver,
                         logger=self.log
                     )
-                    self.log.info("✓ HipotTestSequence initialized - REAL HARDWARE MODE ACTIVE")
+                    self.log.info("✓ HipotTestSequence initialized - REAL HARDWARE MODE ACTIVE (PDIS logic removed)")
                 except Exception as e:
                     self.log.error(f"✗ Failed to create HipotTestSequence: {e}", exc_info=True)
             else:
@@ -202,7 +223,21 @@ class TestRunner:
         Current rule: Always return 1 when WO/PN have any input.
         We'll add if/else mapping later per your logic.
         """
-        # If needed, handle empty strings differently later; for now always FL 1.
+        # Inspect the operator-selected configuration when available.
+        # If the operator selected 440V or 480V use FL 2 on the hipot instrument.
+        try:
+            cfg = getattr(self, "_selected_config", None)
+            if cfg and isinstance(cfg, dict):
+                voltage = cfg.get("voltage")
+                if voltage is not None:
+                    try:
+                        v = int(voltage)
+                        if v in (440, 480):
+                            return 2
+                    except Exception:
+                        pass
+        except Exception:
+            pass
         return 1
 
     # --------------- PUBLIC ENTRY ---------------
@@ -314,65 +349,7 @@ class TestRunner:
                 msg = "Operator cancelled before starting tests"
                 return False, msg, {"passed": False, "message": msg}, {}
 
-        # Hipot test with unlimited retry logic
-        hip_ok = False
-        hip_msg = ""
-        hip_detail = {}
-        attempt = 0
-        
-        while True:  # Unlimited retries until pass or operator exits
-            if attempt > 0:
-                self.log.info(f"HIPOT retry attempt {attempt + 1}")
-                ui.append_hypot_log(f"--- Retry Attempt {attempt + 1} ---")
-                QtWidgets.QApplication.processEvents()
-            
-            # Always keep relay closed during retries (only open when operator exits)
-            hip_ok, hip_msg, hip_detail = self.run_hipot(ui, wo, pn, simulate_for_run, keep_relay_closed=True)
-            
-            if hip_ok:
-                break  # Success, exit retry loop and continue to measurements
-            else:
-                # Test failed - ask operator if they want to retry using Continue/Exit dialog
-                if ContinueExitDialog:
-                    if not ContinueExitDialog.show_prompt(
-                        parent=ui,
-                        title="Hipot Test Failed",
-                        message=f"Test failed: {hip_msg}\n\nPress CONTINUE to retry or EXIT to cancel."
-                    ):
-                        # Operator chose to exit - open all relays before exiting
-                        if self.hipot_test_seq:
-                            try:
-                                self.hipot_test_seq.open_relay()
-                            except Exception:
-                                pass
-                        if self.relay_driver:
-                            try:
-                                self.log.info("Opening all relays after operator exit")
-                                self.relay_driver.all_off()
-                            except Exception as e:
-                                self.log.error(f"Failed to open relays after exit: {e}", exc_info=True)
-                        
-                        # Close test window and return to scanning
-                        if hasattr(ui, 'close'):
-                            ui.close()
-                        if hasattr(self, '_return_to_scan_callback') and self._return_to_scan_callback:
-                            self._return_to_scan_callback()
-                        
-                        return False, f"Hipot failed: {hip_msg} (operator cancelled)", hip_detail, {}
-                else:
-                    # Fallback if widget not available
-                    if not ui.confirm_retry_test("Hipot", hip_msg):
-                        if self.hipot_test_seq:
-                            try:
-                                self.hipot_test_seq.open_relay()
-                            except Exception:
-                                pass
-                        return False, f"Hipot failed: {hip_msg} (operator cancelled)", hip_detail, {}
-                # If continue, loop will retry
-            
-            attempt += 1
-
-        # Measurement test with unlimited retry logic
+        # Measurement test with unlimited retry logic ---------------------------------------------
         meas_ok = False
         meas_msg = ""
         meas_detail = {}
@@ -430,9 +407,77 @@ class TestRunner:
             
             attempt += 1
 
-        # Both tests passed - show success dialog
+
+        # Hipot test with unlimited retry logic ---------------------------------------------
+        hip_ok = False
+        hip_msg = ""
+        hip_detail = {}
+        attempt = 0
+        
+        while True:  # Unlimited retries until pass or operator exits
+            if attempt > 0:
+                self.log.info(f"HIPOT retry attempt {attempt + 1}")
+                ui.append_hypot_log(f"--- Retry Attempt {attempt + 1} ---")
+                QtWidgets.QApplication.processEvents()
+            
+            # Always keep relay closed during retries (only open when operator exits)
+            hip_ok, hip_msg, hip_detail = self.run_hipot(ui, wo, pn, simulate_for_run, keep_relay_closed=True)
+            
+            if hip_ok:
+                break  # Success, exit retry loop and continue to measurements
+            else:
+                # Test failed - ask operator if they want to retry using Continue/Exit dialog
+                if ContinueExitDialog:
+                    if not ContinueExitDialog.show_prompt(
+                        parent=ui,
+                        title="Hipot Test Failed",
+                        message=f"Test failed: {hip_msg}\n\nPress CONTINUE to retry or EXIT to cancel."
+                    ):
+                        # Operator chose to exit - open all relays before exiting
+                        if self.hipot_test_seq:
+                            try:
+                                self.hipot_test_seq.open_relay()
+                            except Exception:
+                                pass
+                        if self.relay_driver:
+                            try:
+                                self.log.info("Opening all relays after operator exit")
+                                self.relay_driver.all_off()
+                            except Exception as e:
+                                self.log.error(f"Failed to open relays after exit: {e}", exc_info=True)
+                        
+                        # Close test window and return to scanning
+                        if hasattr(ui, 'close'):
+                            ui.close()
+                        if hasattr(self, '_return_to_scan_callback') and self._return_to_scan_callback:
+                            self._return_to_scan_callback()
+                        
+                        return False, f"Hipot failed: {hip_msg} (operator cancelled)", hip_detail, {}
+                else:
+                    # Fallback if widget not available
+                    if not ui.confirm_retry_test("Hipot", hip_msg):
+                        if self.hipot_test_seq:
+                            try:
+                                self.hipot_test_seq.open_relay()
+                            except Exception:
+                                pass
+                        return False, f"Hipot failed: {hip_msg} (operator cancelled)", hip_detail, {}
+                # If continue, loop will retry
+            
+            attempt += 1
+
+        
+        # Both tests passed - show success dialog. Schedule QC printing from the
+        # dialog so the sticker is printed ~1s after the dialog is shown.
         if TestPassedDialog:
-            TestPassedDialog.show_passed(parent=ui)
+            try:
+                TestPassedDialog.show_passed(parent=ui, work_order=wo, part_number=pn)
+            except TypeError:
+                # Fallback if older signature present
+                TestPassedDialog.show_passed(parent=ui)
+
+        # QC printing is scheduled from the TestPassedDialog to occur
+        # ~1 second after the dialog is shown. No additional action needed here.
 
         # Open all relays before returning to scan
         if self.relay_driver:
@@ -546,8 +591,16 @@ class TestRunner:
         Returns (passed, message, detail_dict).
         """
         self.log.info(f"HIPOT start | WO={work_order} | PN={part_number}")
+        # Defensive checks: ensure UI is present and implements required methods
+        if ui is None:
+            self.log.error("HIPOT start failed: ui is None")
+            return False, "UI not available", {"passed": False}
 
-        ui.hypot_ready()
+        try:
+            ui.hypot_ready()
+        except Exception as e:
+            self.log.error(f"HIPOT: ui.hypot_ready() failed: {e}", exc_info=True)
+            return False, f"UI error: {e}", {"passed": False}
         time.sleep(0.2)
 
         ui.hypot_running()
@@ -592,12 +645,15 @@ class TestRunner:
                 # TIMING CONFIGURATION FOR RESET
                 HIPOT_TEST_DURATION = 4.0  # Expected test duration in seconds
                 RESET_DELAY_AFTER_RESULT = 3.0  # Delay after result for operator awareness
-                
+
+                # Determine which FL to run based on operator configuration
+                file_index = self._select_hypot_file_index(work_order, part_number)
                 passed, msg = self.hipot_test_seq.run_test(
                     keep_relay_closed=keep_relay_closed,
                     reset_after_test=True,
                     total_test_duration_s=HIPOT_TEST_DURATION,
-                    reset_delay_after_result_s=RESET_DELAY_AFTER_RESULT
+                    reset_delay_after_result_s=RESET_DELAY_AFTER_RESULT,
+                    file_index=file_index
                 )
                 
                 ui.append_hypot_log("Step 5/5: Disable relay (all relays OFF)")

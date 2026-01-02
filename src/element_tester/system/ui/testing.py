@@ -228,7 +228,7 @@ class MainTestWindow(QtWidgets.QWidget):
         labels = []
         # Use explicit row labels for correct pin pairings (no trailing colon here;
         # the value insertion in the measuring code will add the ": <value>" part)
-        row_names = ["Pin 1 to 6", "Pin 2 to 5", "Pin 3 to 4"]
+        row_names = ["Pin 1 to 6: ---", "Pin 2 to 5: ---", "Pin 3 to 4: ---"]
         for i in range(3):
             lab = QtWidgets.QLabel(row_names[i])
             f = lab.font()

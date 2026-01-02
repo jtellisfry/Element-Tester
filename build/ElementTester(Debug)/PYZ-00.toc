@@ -1,0 +1,3 @@
+('C:\\Files\\element '
+ 'tester\\Element_Tester\\build\\ElementTester(Debug)\\PYZ-00.pyz',
+ [])

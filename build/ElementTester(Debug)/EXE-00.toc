@@ -1,0 +1,2096 @@
+('C:\\Files\\element tester\\Element_Tester\\dist\\ElementTester(Debug).exe',
+ False,
+ True,
+ False,
+ 'C:\\Files\\element '
+ 'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\images\\icon-windowed.ico',
+ None,
+ False,
+ False,
+ b'<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<assembly xmlns='
+ b'"urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\n  <trustInfo x'
+ b'mlns="urn:schemas-microsoft-com:asm.v3">\n    <security>\n      <requested'
+ b'Privileges>\n        <requestedExecutionLevel level="asInvoker" uiAccess='
+ b'"false"/>\n      </requestedPrivileges>\n    </security>\n  </trustInfo>\n  '
+ b'<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">\n    <'
+ b'application>\n      <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f'
+ b'0}"/>\n      <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>\n '
+ b'     <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>\n      <s'
+ b'upportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>\n      <supporte'
+ b'dOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>\n    </application>\n  <'
+ b'/compatibility>\n  <application xmlns="urn:schemas-microsoft-com:asm.v3">'
+ b'\n    <windowsSettings>\n      <longPathAware xmlns="http://schemas.micros'
+ b'oft.com/SMI/2016/WindowsSettings">true</longPathAware>\n    </windowsSett'
+ b'ings>\n  </application>\n  <dependency>\n    <dependentAssembly>\n      <ass'
+ b'emblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version='
+ b'"6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" langua'
+ b'ge="*"/>\n    </dependentAssembly>\n  </dependency>\n</assembly>',
+ True,
+ False,
+ None,
+ None,
+ None,
+ 'C:\\Files\\element '
+ 'tester\\Element_Tester\\build\\ElementTester(Debug)\\ElementTester(Debug).pkg',
+ [('v', None, 'OPTION'),
+  ('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pyqt6',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt6.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('test_runner',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\src\\element_tester\\system\\core\\test_runner.py',
+   'PYSOURCE'),
+  ('python313.dll', 'C:\\Program Files\\Python313\\python313.dll', 'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\platforms\\qminimal.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\platforms\\qminimal.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\platforms\\qwindows.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\platforms\\qwindows.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\iconengines\\qsvgicon.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\iconengines\\qsvgicon.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\imageformats\\qwebp.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\imageformats\\qwebp.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\imageformats\\qsvg.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\imageformats\\qsvg.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\imageformats\\qpdf.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\imageformats\\qpdf.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\imageformats\\qtga.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\imageformats\\qtga.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\generic\\qtuiotouchplugin.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\generic\\qtuiotouchplugin.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\imageformats\\qico.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\imageformats\\qico.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\imageformats\\qgif.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\imageformats\\qgif.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\platforms\\qoffscreen.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\platforms\\qoffscreen.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\imageformats\\qwbmp.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\imageformats\\qwbmp.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\imageformats\\qicns.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\imageformats\\qicns.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\imageformats\\qtiff.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\imageformats\\qtiff.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\imageformats\\qjpeg.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\imageformats\\qjpeg.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\plugins\\styles\\qmodernwindowsstyle.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\plugins\\styles\\qmodernwindowsstyle.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\opengl32sw.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\opengl32sw.dll',
+   'BINARY'),
+  ('_decimal.pyd',
+   'C:\\Program Files\\Python313\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Program Files\\Python313\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_lzma.pyd', 'C:\\Program Files\\Python313\\DLLs\\_lzma.pyd', 'EXTENSION'),
+  ('_bz2.pyd', 'C:\\Program Files\\Python313\\DLLs\\_bz2.pyd', 'EXTENSION'),
+  ('select.pyd', 'C:\\Program Files\\Python313\\DLLs\\select.pyd', 'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Program Files\\Python313\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Program Files\\Python313\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_ctypes.pyd',
+   'C:\\Program Files\\Python313\\DLLs\\_ctypes.pyd',
+   'EXTENSION'),
+  ('PyQt6\\QtGui.pyd',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\QtGui.pyd',
+   'EXTENSION'),
+  ('PyQt6\\sip.cp313-win_amd64.pyd',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\sip.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PyQt6\\QtCore.pyd',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\QtCore.pyd',
+   'EXTENSION'),
+  ('hid.cp313-win_amd64.pyd',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\hid.cp313-win_amd64.pyd',
+   'EXTENSION'),
+  ('PyQt6\\QtWidgets.pyd',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\QtWidgets.pyd',
+   'EXTENSION'),
+  ('api-ms-win-crt-environment-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-time-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-filesystem-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-filesystem-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-conio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-heap-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-convert-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Program Files\\Python313\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\Qt6Gui.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\Qt6Gui.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\Qt6Core.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\Qt6Core.dll',
+   'BINARY'),
+  ('VCRUNTIME140_1.dll',
+   'C:\\Program Files\\Python313\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\MSVCP140.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\MSVCP140.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\Qt6Svg.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\Qt6Svg.dll',
+   'BINARY'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-crt-utility-l1-1-0.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\Qt6Pdf.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\Qt6Pdf.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\Qt6Network.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\Qt6Network.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\Qt6Widgets.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\Qt6Widgets.dll',
+   'BINARY'),
+  ('libcrypto-3.dll',
+   'C:\\Program Files\\Python313\\DLLs\\libcrypto-3.dll',
+   'BINARY'),
+  ('libffi-8.dll',
+   'C:\\Program Files\\Python313\\DLLs\\libffi-8.dll',
+   'BINARY'),
+  ('python3.dll', 'C:\\Program Files\\Python313\\python3.dll', 'BINARY'),
+  ('PyQt6\\Qt6\\bin\\MSVCP140_2.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\MSVCP140_2.dll',
+   'BINARY'),
+  ('ucrtbase.dll',
+   'C:\\Program Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\ucrtbase.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\VCRUNTIME140_1.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\VCRUNTIME140_1.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\VCRUNTIME140.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\bin\\MSVCP140_1.dll',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\bin\\MSVCP140_1.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-datetime-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\Semeru\\jdk-21.0.6.7-openj9\\bin\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('PyQt6\\Qt6\\translations\\qt_help_ja.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_ja.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_gd.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_gd.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_cs.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_cs.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_it.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_it.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_fr.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_fr.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_he.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_he.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_de.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_de.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_ka.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_ka.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_nn.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_nn.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_es.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_es.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_ko.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_ko.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_fr.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_fr.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_ko.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_ko.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_ca.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_ca.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_ja.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_ja.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_ar.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_ar.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_ru.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_ru.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_it.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_it.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_zh_TW.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_zh_TW.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_en.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_en.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_sl.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_sl.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_pl.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_pl.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_he.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_he.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_es.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_es.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_ru.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_ru.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_it.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_it.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_sk.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_sk.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_ja.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_ja.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_uk.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_uk.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_de.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_de.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_es.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_es.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_fr.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_fr.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_hu.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_hu.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_gl.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_gl.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_en.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_nl.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_nl.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_pt_BR.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_pt_BR.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_fi.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_fi.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_lv.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_sk.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_sk.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_ca.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_ca.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_fa.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_fa.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_cs.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_cs.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_sv.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_sv.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_sk.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_sk.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_uk.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_uk.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_hr.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_hr.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_zh_CN.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_zh_CN.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_da.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_da.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_ca.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_tr.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_tr.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_lg.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_lg.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_hr.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_hr.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_pl.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_pl.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_tr.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_tr.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_ka.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_ka.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_fa.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_fa.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_zh_CN.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_zh_CN.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_nn.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_nn.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_da.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_da.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_nn.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_nn.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_cs.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_cs.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_fi.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_fi.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_bg.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_bg.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_lv.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_lv.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_sv.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_sv.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_sl.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_sl.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_bg.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_bg.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_tr.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_tr.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_da.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_da.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_sv.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_sv.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_gd.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_gd.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_ko.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_ar.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_ar.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_ru.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_ru.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_hu.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_hu.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_hu.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_hu.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_lg.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_lg.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_lt.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_lt.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_pl.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_pl.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_zh_CN.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_zh_CN.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_pt_PT.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_pt_PT.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_ka.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_ka.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_hr.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_hr.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_pt_BR.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_pt_BR.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_bg.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_gl.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_gl.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_de.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_de.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_ar.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_ar.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_uk.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_uk.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_nl.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_nl.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qtbase_nl.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qtbase_nl.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_zh_TW.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_zh_TW.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_en.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_en.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_zh_TW.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_zh_TW.qm',
+   'DATA'),
+  ('PyQt6\\Qt6\\translations\\qt_help_pt_BR.qm',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyQt6\\Qt6\\translations\\qt_help_pt_BR.qm',
+   'DATA'),
+  ('pkgutil.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\pkgutil.pyc',
+   'DATA'),
+  ('zipimport.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\zipimport.pyc',
+   'DATA'),
+  ('struct.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\struct.pyc',
+   'DATA'),
+  ('importlib\\readers.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\readers.pyc',
+   'DATA'),
+  ('importlib\\resources\\readers.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\resources\\readers.pyc',
+   'DATA'),
+  ('importlib\\resources\\_itertools.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\resources\\_itertools.pyc',
+   'DATA'),
+  ('importlib\\resources\\abc.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\resources\\abc.pyc',
+   'DATA'),
+  ('importlib\\resources\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\resources\\__init__.pyc',
+   'DATA'),
+  ('importlib\\resources\\_functional.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\resources\\_functional.pyc',
+   'DATA'),
+  ('importlib\\resources\\_common.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\resources\\_common.pyc',
+   'DATA'),
+  ('importlib\\resources\\_adapters.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\resources\\_adapters.pyc',
+   'DATA'),
+  ('tempfile.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\tempfile.pyc',
+   'DATA'),
+  ('random.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\random.pyc',
+   'DATA'),
+  ('statistics.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\statistics.pyc',
+   'DATA'),
+  ('decimal.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\decimal.pyc',
+   'DATA'),
+  ('_pydecimal.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_pydecimal.pyc',
+   'DATA'),
+  ('contextvars.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\contextvars.pyc',
+   'DATA'),
+  ('fractions.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\fractions.pyc',
+   'DATA'),
+  ('numbers.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\numbers.pyc',
+   'DATA'),
+  ('hashlib.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\hashlib.pyc',
+   'DATA'),
+  ('bisect.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\bisect.pyc',
+   'DATA'),
+  ('shutil.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\shutil.pyc',
+   'DATA'),
+  ('tarfile.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\tarfile.pyc',
+   'DATA'),
+  ('gzip.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\gzip.pyc',
+   'DATA'),
+  ('_compression.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_compression.pyc',
+   'DATA'),
+  ('copy.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\copy.pyc',
+   'DATA'),
+  ('lzma.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\lzma.pyc',
+   'DATA'),
+  ('bz2.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\bz2.pyc',
+   'DATA'),
+  ('fnmatch.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\fnmatch.pyc',
+   'DATA'),
+  ('zipfile\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\zipfile\\__init__.pyc',
+   'DATA'),
+  ('zipfile\\_path\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\zipfile\\_path\\__init__.pyc',
+   'DATA'),
+  ('zipfile\\_path\\glob.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\zipfile\\_path\\glob.pyc',
+   'DATA'),
+  ('py_compile.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\py_compile.pyc',
+   'DATA'),
+  ('importlib\\_bootstrap_external.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\_bootstrap_external.pyc',
+   'DATA'),
+  ('importlib\\metadata\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\metadata\\__init__.pyc',
+   'DATA'),
+  ('csv.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\csv.pyc',
+   'DATA'),
+  ('importlib\\metadata\\_adapters.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\metadata\\_adapters.pyc',
+   'DATA'),
+  ('importlib\\metadata\\_text.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\metadata\\_text.pyc',
+   'DATA'),
+  ('email\\message.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\message.pyc',
+   'DATA'),
+  ('email\\policy.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\policy.pyc',
+   'DATA'),
+  ('email\\contentmanager.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\contentmanager.pyc',
+   'DATA'),
+  ('email\\quoprimime.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\quoprimime.pyc',
+   'DATA'),
+  ('string.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\string.pyc',
+   'DATA'),
+  ('email\\headerregistry.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\headerregistry.pyc',
+   'DATA'),
+  ('email\\_header_value_parser.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\_header_value_parser.pyc',
+   'DATA'),
+  ('urllib\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\urllib\\__init__.pyc',
+   'DATA'),
+  ('email\\iterators.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\iterators.pyc',
+   'DATA'),
+  ('email\\generator.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\generator.pyc',
+   'DATA'),
+  ('email\\_encoded_words.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\_encoded_words.pyc',
+   'DATA'),
+  ('base64.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\base64.pyc',
+   'DATA'),
+  ('getopt.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\getopt.pyc',
+   'DATA'),
+  ('gettext.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\gettext.pyc',
+   'DATA'),
+  ('email\\charset.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\charset.pyc',
+   'DATA'),
+  ('email\\encoders.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\encoders.pyc',
+   'DATA'),
+  ('email\\base64mime.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\base64mime.pyc',
+   'DATA'),
+  ('email\\_policybase.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\_policybase.pyc',
+   'DATA'),
+  ('email\\header.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\header.pyc',
+   'DATA'),
+  ('email\\errors.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\errors.pyc',
+   'DATA'),
+  ('email\\utils.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\utils.pyc',
+   'DATA'),
+  ('socket.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\socket.pyc',
+   'DATA'),
+  ('selectors.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\selectors.pyc',
+   'DATA'),
+  ('email\\_parseaddr.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\_parseaddr.pyc',
+   'DATA'),
+  ('calendar.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\calendar.pyc',
+   'DATA'),
+  ('urllib\\parse.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\urllib\\parse.pyc',
+   'DATA'),
+  ('ipaddress.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ipaddress.pyc',
+   'DATA'),
+  ('quopri.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\quopri.pyc',
+   'DATA'),
+  ('importlib\\abc.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\abc.pyc',
+   'DATA'),
+  ('importlib\\_abc.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\_abc.pyc',
+   'DATA'),
+  ('importlib\\_bootstrap.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\_bootstrap.pyc',
+   'DATA'),
+  ('importlib\\metadata\\_itertools.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\metadata\\_itertools.pyc',
+   'DATA'),
+  ('importlib\\metadata\\_functools.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\metadata\\_functools.pyc',
+   'DATA'),
+  ('importlib\\metadata\\_collections.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\metadata\\_collections.pyc',
+   'DATA'),
+  ('importlib\\metadata\\_meta.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\metadata\\_meta.pyc',
+   'DATA'),
+  ('textwrap.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\textwrap.pyc',
+   'DATA'),
+  ('email\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\__init__.pyc',
+   'DATA'),
+  ('email\\parser.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\parser.pyc',
+   'DATA'),
+  ('email\\feedparser.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\email\\feedparser.pyc',
+   'DATA'),
+  ('tokenize.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\tokenize.pyc',
+   'DATA'),
+  ('token.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\token.pyc',
+   'DATA'),
+  ('threading.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\threading.pyc',
+   'DATA'),
+  ('_threading_local.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_threading_local.pyc',
+   'DATA'),
+  ('contextlib.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\contextlib.pyc',
+   'DATA'),
+  ('inspect.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\inspect.pyc',
+   'DATA'),
+  ('dis.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\dis.pyc',
+   'DATA'),
+  ('opcode.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\opcode.pyc',
+   'DATA'),
+  ('_opcode_metadata.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_opcode_metadata.pyc',
+   'DATA'),
+  ('ast.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ast.pyc',
+   'DATA'),
+  ('importlib\\machinery.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\machinery.pyc',
+   'DATA'),
+  ('importlib\\util.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\util.pyc',
+   'DATA'),
+  ('importlib\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\importlib\\__init__.pyc',
+   'DATA'),
+  ('_pyi_rth_utils\\qt.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_pyi_rth_utils\\qt.pyc',
+   'DATA'),
+  ('_pyi_rth_utils\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_pyi_rth_utils\\__init__.pyc',
+   'DATA'),
+  ('copyreg.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\copyreg.pyc',
+   'DATA'),
+  ('heapq.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\heapq.pyc',
+   'DATA'),
+  ('warnings.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\warnings.pyc',
+   'DATA'),
+  ('tracemalloc.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\tracemalloc.pyc',
+   'DATA'),
+  ('pickle.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\pickle.pyc',
+   'DATA'),
+  ('pprint.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\pprint.pyc',
+   'DATA'),
+  ('dataclasses.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\dataclasses.pyc',
+   'DATA'),
+  ('_compat_pickle.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_compat_pickle.pyc',
+   'DATA'),
+  ('posixpath.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\posixpath.pyc',
+   'DATA'),
+  ('reprlib.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\reprlib.pyc',
+   'DATA'),
+  ('_collections_abc.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_collections_abc.pyc',
+   'DATA'),
+  ('abc.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\abc.pyc',
+   'DATA'),
+  ('_py_abc.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_py_abc.pyc',
+   'DATA'),
+  ('weakref.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\weakref.pyc',
+   'DATA'),
+  ('ntpath.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ntpath.pyc',
+   'DATA'),
+  ('encodings\\zlib_codec.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\zlib_codec.pyc',
+   'DATA'),
+  ('encodings\\uu_codec.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\uu_codec.pyc',
+   'DATA'),
+  ('encodings\\utf_8_sig.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\utf_8_sig.pyc',
+   'DATA'),
+  ('encodings\\utf_8.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\utf_8.pyc',
+   'DATA'),
+  ('encodings\\utf_7.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\utf_7.pyc',
+   'DATA'),
+  ('encodings\\utf_32_le.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\utf_32_le.pyc',
+   'DATA'),
+  ('encodings\\utf_32_be.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\utf_32_be.pyc',
+   'DATA'),
+  ('encodings\\utf_32.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\utf_32.pyc',
+   'DATA'),
+  ('encodings\\utf_16_le.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\utf_16_le.pyc',
+   'DATA'),
+  ('encodings\\utf_16_be.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\utf_16_be.pyc',
+   'DATA'),
+  ('encodings\\utf_16.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\utf_16.pyc',
+   'DATA'),
+  ('encodings\\unicode_escape.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\unicode_escape.pyc',
+   'DATA'),
+  ('encodings\\undefined.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\undefined.pyc',
+   'DATA'),
+  ('encodings\\tis_620.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\tis_620.pyc',
+   'DATA'),
+  ('encodings\\shift_jisx0213.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\shift_jisx0213.pyc',
+   'DATA'),
+  ('encodings\\shift_jis_2004.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\shift_jis_2004.pyc',
+   'DATA'),
+  ('encodings\\shift_jis.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\shift_jis.pyc',
+   'DATA'),
+  ('encodings\\rot_13.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\rot_13.pyc',
+   'DATA'),
+  ('encodings\\raw_unicode_escape.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\raw_unicode_escape.pyc',
+   'DATA'),
+  ('encodings\\quopri_codec.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\quopri_codec.pyc',
+   'DATA'),
+  ('encodings\\punycode.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\punycode.pyc',
+   'DATA'),
+  ('encodings\\ptcp154.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\ptcp154.pyc',
+   'DATA'),
+  ('encodings\\palmos.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\palmos.pyc',
+   'DATA'),
+  ('encodings\\oem.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\oem.pyc',
+   'DATA'),
+  ('encodings\\mbcs.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mbcs.pyc',
+   'DATA'),
+  ('encodings\\mac_turkish.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mac_turkish.pyc',
+   'DATA'),
+  ('encodings\\mac_romanian.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mac_romanian.pyc',
+   'DATA'),
+  ('encodings\\mac_roman.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mac_roman.pyc',
+   'DATA'),
+  ('encodings\\mac_latin2.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mac_latin2.pyc',
+   'DATA'),
+  ('encodings\\mac_iceland.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mac_iceland.pyc',
+   'DATA'),
+  ('encodings\\mac_greek.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mac_greek.pyc',
+   'DATA'),
+  ('encodings\\mac_farsi.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mac_farsi.pyc',
+   'DATA'),
+  ('encodings\\mac_cyrillic.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mac_cyrillic.pyc',
+   'DATA'),
+  ('encodings\\mac_croatian.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mac_croatian.pyc',
+   'DATA'),
+  ('encodings\\mac_arabic.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\mac_arabic.pyc',
+   'DATA'),
+  ('encodings\\latin_1.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\latin_1.pyc',
+   'DATA'),
+  ('encodings\\kz1048.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\kz1048.pyc',
+   'DATA'),
+  ('encodings\\koi8_u.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\koi8_u.pyc',
+   'DATA'),
+  ('encodings\\koi8_t.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\koi8_t.pyc',
+   'DATA'),
+  ('encodings\\koi8_r.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\koi8_r.pyc',
+   'DATA'),
+  ('encodings\\johab.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\johab.pyc',
+   'DATA'),
+  ('encodings\\iso8859_9.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_9.pyc',
+   'DATA'),
+  ('encodings\\iso8859_8.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_8.pyc',
+   'DATA'),
+  ('encodings\\iso8859_7.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_7.pyc',
+   'DATA'),
+  ('encodings\\iso8859_6.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_6.pyc',
+   'DATA'),
+  ('encodings\\iso8859_5.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_5.pyc',
+   'DATA'),
+  ('encodings\\iso8859_4.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_4.pyc',
+   'DATA'),
+  ('encodings\\iso8859_3.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_3.pyc',
+   'DATA'),
+  ('encodings\\iso8859_2.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_2.pyc',
+   'DATA'),
+  ('encodings\\iso8859_16.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_16.pyc',
+   'DATA'),
+  ('encodings\\iso8859_15.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_15.pyc',
+   'DATA'),
+  ('encodings\\iso8859_14.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_14.pyc',
+   'DATA'),
+  ('encodings\\iso8859_13.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_13.pyc',
+   'DATA'),
+  ('encodings\\iso8859_11.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_11.pyc',
+   'DATA'),
+  ('encodings\\iso8859_10.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_10.pyc',
+   'DATA'),
+  ('encodings\\iso8859_1.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso8859_1.pyc',
+   'DATA'),
+  ('encodings\\iso2022_kr.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso2022_kr.pyc',
+   'DATA'),
+  ('encodings\\iso2022_jp_ext.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso2022_jp_ext.pyc',
+   'DATA'),
+  ('encodings\\iso2022_jp_3.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso2022_jp_3.pyc',
+   'DATA'),
+  ('encodings\\iso2022_jp_2004.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso2022_jp_2004.pyc',
+   'DATA'),
+  ('encodings\\iso2022_jp_2.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso2022_jp_2.pyc',
+   'DATA'),
+  ('encodings\\iso2022_jp_1.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso2022_jp_1.pyc',
+   'DATA'),
+  ('encodings\\iso2022_jp.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\iso2022_jp.pyc',
+   'DATA'),
+  ('encodings\\idna.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\idna.pyc',
+   'DATA'),
+  ('stringprep.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\stringprep.pyc',
+   'DATA'),
+  ('encodings\\hz.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\hz.pyc',
+   'DATA'),
+  ('encodings\\hp_roman8.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\hp_roman8.pyc',
+   'DATA'),
+  ('encodings\\hex_codec.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\hex_codec.pyc',
+   'DATA'),
+  ('encodings\\gbk.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\gbk.pyc',
+   'DATA'),
+  ('encodings\\gb2312.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\gb2312.pyc',
+   'DATA'),
+  ('encodings\\gb18030.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\gb18030.pyc',
+   'DATA'),
+  ('encodings\\euc_kr.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\euc_kr.pyc',
+   'DATA'),
+  ('encodings\\euc_jp.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\euc_jp.pyc',
+   'DATA'),
+  ('encodings\\euc_jisx0213.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\euc_jisx0213.pyc',
+   'DATA'),
+  ('encodings\\euc_jis_2004.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\euc_jis_2004.pyc',
+   'DATA'),
+  ('encodings\\cp950.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp950.pyc',
+   'DATA'),
+  ('encodings\\cp949.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp949.pyc',
+   'DATA'),
+  ('encodings\\cp932.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp932.pyc',
+   'DATA'),
+  ('encodings\\cp875.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp875.pyc',
+   'DATA'),
+  ('encodings\\cp874.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp874.pyc',
+   'DATA'),
+  ('encodings\\cp869.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp869.pyc',
+   'DATA'),
+  ('encodings\\cp866.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp866.pyc',
+   'DATA'),
+  ('encodings\\cp865.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp865.pyc',
+   'DATA'),
+  ('encodings\\cp864.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp864.pyc',
+   'DATA'),
+  ('encodings\\cp863.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp863.pyc',
+   'DATA'),
+  ('encodings\\cp862.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp862.pyc',
+   'DATA'),
+  ('encodings\\cp861.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp861.pyc',
+   'DATA'),
+  ('encodings\\cp860.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp860.pyc',
+   'DATA'),
+  ('encodings\\cp858.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp858.pyc',
+   'DATA'),
+  ('encodings\\cp857.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp857.pyc',
+   'DATA'),
+  ('encodings\\cp856.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp856.pyc',
+   'DATA'),
+  ('encodings\\cp855.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp855.pyc',
+   'DATA'),
+  ('encodings\\cp852.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp852.pyc',
+   'DATA'),
+  ('encodings\\cp850.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp850.pyc',
+   'DATA'),
+  ('encodings\\cp775.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp775.pyc',
+   'DATA'),
+  ('encodings\\cp737.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp737.pyc',
+   'DATA'),
+  ('encodings\\cp720.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp720.pyc',
+   'DATA'),
+  ('encodings\\cp500.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp500.pyc',
+   'DATA'),
+  ('encodings\\cp437.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp437.pyc',
+   'DATA'),
+  ('encodings\\cp424.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp424.pyc',
+   'DATA'),
+  ('encodings\\cp273.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp273.pyc',
+   'DATA'),
+  ('encodings\\cp1258.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1258.pyc',
+   'DATA'),
+  ('encodings\\cp1257.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1257.pyc',
+   'DATA'),
+  ('encodings\\cp1256.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1256.pyc',
+   'DATA'),
+  ('encodings\\cp1255.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1255.pyc',
+   'DATA'),
+  ('encodings\\cp1254.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1254.pyc',
+   'DATA'),
+  ('encodings\\cp1253.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1253.pyc',
+   'DATA'),
+  ('encodings\\cp1252.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1252.pyc',
+   'DATA'),
+  ('encodings\\cp1251.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1251.pyc',
+   'DATA'),
+  ('encodings\\cp1250.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1250.pyc',
+   'DATA'),
+  ('encodings\\cp1140.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1140.pyc',
+   'DATA'),
+  ('encodings\\cp1125.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1125.pyc',
+   'DATA'),
+  ('encodings\\cp1026.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1026.pyc',
+   'DATA'),
+  ('encodings\\cp1006.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp1006.pyc',
+   'DATA'),
+  ('encodings\\cp037.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\cp037.pyc',
+   'DATA'),
+  ('encodings\\charmap.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\charmap.pyc',
+   'DATA'),
+  ('encodings\\bz2_codec.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\bz2_codec.pyc',
+   'DATA'),
+  ('encodings\\big5hkscs.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\big5hkscs.pyc',
+   'DATA'),
+  ('encodings\\big5.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\big5.pyc',
+   'DATA'),
+  ('encodings\\base64_codec.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\base64_codec.pyc',
+   'DATA'),
+  ('encodings\\ascii.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\ascii.pyc',
+   'DATA'),
+  ('encodings\\aliases.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\aliases.pyc',
+   'DATA'),
+  ('encodings\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\encodings\\__init__.pyc',
+   'DATA'),
+  ('sre_constants.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\sre_constants.pyc',
+   'DATA'),
+  ('sre_compile.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\sre_compile.pyc',
+   'DATA'),
+  ('locale.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\locale.pyc',
+   'DATA'),
+  ('traceback.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\traceback.pyc',
+   'DATA'),
+  ('_colorize.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_colorize.pyc',
+   'DATA'),
+  ('types.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\types.pyc',
+   'DATA'),
+  ('collections\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\collections\\__init__.pyc',
+   'DATA'),
+  ('stat.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\stat.pyc',
+   'DATA'),
+  ('enum.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\enum.pyc',
+   'DATA'),
+  ('re\\_parser.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\re\\_parser.pyc',
+   'DATA'),
+  ('re\\_constants.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\re\\_constants.pyc',
+   'DATA'),
+  ('re\\_compiler.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\re\\_compiler.pyc',
+   'DATA'),
+  ('re\\_casefix.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\re\\_casefix.pyc',
+   'DATA'),
+  ('re\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\re\\__init__.pyc',
+   'DATA'),
+  ('os.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\os.pyc',
+   'DATA'),
+  ('subprocess.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\subprocess.pyc',
+   'DATA'),
+  ('signal.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\signal.pyc',
+   'DATA'),
+  ('codecs.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\codecs.pyc',
+   'DATA'),
+  ('_weakrefset.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_weakrefset.pyc',
+   'DATA'),
+  ('operator.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\operator.pyc',
+   'DATA'),
+  ('io.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\io.pyc',
+   'DATA'),
+  ('functools.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\functools.pyc',
+   'DATA'),
+  ('genericpath.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\genericpath.pyc',
+   'DATA'),
+  ('sre_parse.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\sre_parse.pyc',
+   'DATA'),
+  ('linecache.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\linecache.pyc',
+   'DATA'),
+  ('keyword.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\keyword.pyc',
+   'DATA'),
+  ('element_tester\\system\\ui\\scanning.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\ui\\scanning.pyc',
+   'DATA'),
+  ('element_tester\\system\\ui\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\ui\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\system\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\system\\ui\\debug.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\ui\\debug.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\hypot3865\\transport.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\hypot3865\\transport.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\hypot3865\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\hypot3865\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\__init__.pyc',
+   'DATA'),
+  ('serial\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\serial\\__init__.pyc',
+   'DATA'),
+  ('serial\\serialjava.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\serial\\serialjava.pyc',
+   'DATA'),
+  ('serial\\serialposix.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\serial\\serialposix.pyc',
+   'DATA'),
+  ('serial\\serialwin32.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\serial\\serialwin32.pyc',
+   'DATA'),
+  ('ctypes\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ctypes\\__init__.pyc',
+   'DATA'),
+  ('ctypes\\_endian.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ctypes\\_endian.pyc',
+   'DATA'),
+  ('serial\\win32.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\serial\\win32.pyc',
+   'DATA'),
+  ('ctypes\\wintypes.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ctypes\\wintypes.pyc',
+   'DATA'),
+  ('serial\\serialcli.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\serial\\serialcli.pyc',
+   'DATA'),
+  ('serial\\serialutil.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\serial\\serialutil.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\hypot3865\\commands.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\hypot3865\\commands.pyc',
+   'DATA'),
+  ('argparse.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\argparse.pyc',
+   'DATA'),
+  ('element_tester\\system\\ui\\configuration_ui.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\ui\\configuration_ui.pyc',
+   'DATA'),
+  ('element_tester\\system\\procedures\\measurement_test_procedures.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\procedures\\measurement_test_procedures.pyc',
+   'DATA'),
+  ('element_tester\\system\\procedures\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\procedures\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\meter_ut61e\\driver.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\meter_ut61e\\driver.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\meter_ut61e\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\meter_ut61e\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\meter_ut61e\\transport.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\meter_ut61e\\transport.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\meter_ut61e\\errors.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\meter_ut61e\\errors.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\meter_ut61e\\commands.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\meter_ut61e\\commands.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\meter_ut61e\\procedures.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\meter_ut61e\\procedures.pyc',
+   'DATA'),
+  ('element_tester\\system\\widgets\\test_passed.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\widgets\\test_passed.pyc',
+   'DATA'),
+  ('element_tester\\system\\widgets\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\widgets\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\system\\widgets\\continue_exit.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\widgets\\continue_exit.pyc',
+   'DATA'),
+  ('element_tester\\programs\\hipot_test\\test.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\programs\\hipot_test\\test.pyc',
+   'DATA'),
+  ('element_tester\\programs\\hipot_test\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\programs\\hipot_test\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\programs\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\programs\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\system\\procedures\\hipot_test_procedures.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\procedures\\hipot_test_procedures.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\relay_mcc\\driver.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\relay_mcc\\driver.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\relay_mcc\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\relay_mcc\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\relay_mcc\\commands.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\relay_mcc\\commands.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\relay_mcc\\transport.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\relay_mcc\\transport.pyc',
+   'DATA'),
+  ('mcculw\\enums.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\mcculw\\enums.pyc',
+   'DATA'),
+  ('mcculw\\ul.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\mcculw\\ul.pyc',
+   'DATA'),
+  ('mcculw\\structs.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\mcculw\\structs.pyc',
+   'DATA'),
+  ('ctypes\\util.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ctypes\\util.pyc',
+   'DATA'),
+  ('ctypes\\_aix.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ctypes\\_aix.pyc',
+   'DATA'),
+  ('ctypes\\macholib\\dyld.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ctypes\\macholib\\dyld.pyc',
+   'DATA'),
+  ('ctypes\\macholib\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ctypes\\macholib\\__init__.pyc',
+   'DATA'),
+  ('ctypes\\macholib\\dylib.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ctypes\\macholib\\dylib.pyc',
+   'DATA'),
+  ('ctypes\\macholib\\framework.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\ctypes\\macholib\\framework.pyc',
+   'DATA'),
+  ('mcculw\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\mcculw\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\relay_mcc\\errors.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\relay_mcc\\errors.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\relay_mcc\\procedures.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\relay_mcc\\procedures.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\hypot3865\\driver.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\hypot3865\\driver.pyc',
+   'DATA'),
+  ('element_tester\\system\\drivers\\hypot3865\\procedures.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\drivers\\hypot3865\\procedures.pyc',
+   'DATA'),
+  ('PyQt6\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\PyQt6\\__init__.pyc',
+   'DATA'),
+  ('element_tester\\system\\ui\\testing.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\element_tester\\system\\ui\\testing.pyc',
+   'DATA'),
+  ('datetime.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\datetime.pyc',
+   'DATA'),
+  ('_pydatetime.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_pydatetime.pyc',
+   'DATA'),
+  ('_strptime.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\_strptime.pyc',
+   'DATA'),
+  ('json\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\json\\__init__.pyc',
+   'DATA'),
+  ('json\\encoder.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\json\\encoder.pyc',
+   'DATA'),
+  ('json\\decoder.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\json\\decoder.pyc',
+   'DATA'),
+  ('json\\scanner.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\json\\scanner.pyc',
+   'DATA'),
+  ('logging\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\logging\\__init__.pyc',
+   'DATA'),
+  ('pathlib\\__init__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\pathlib\\__init__.pyc',
+   'DATA'),
+  ('pathlib\\_local.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\pathlib\\_local.pyc',
+   'DATA'),
+  ('glob.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\glob.pyc',
+   'DATA'),
+  ('pathlib\\_abc.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\pathlib\\_abc.pyc',
+   'DATA'),
+  ('typing.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\typing.pyc',
+   'DATA'),
+  ('__future__.pyc',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\build\\ElementTester(Debug)\\localpycs\\0\\__future__.pyc',
+   'DATA')],
+ [],
+ False,
+ False,
+ 1766759027,
+ [('runw_d.exe',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw_d.exe',
+   'EXECUTABLE')],
+ 'C:\\Program Files\\Python313\\python313.dll')

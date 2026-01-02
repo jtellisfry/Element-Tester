@@ -95,13 +95,36 @@ class TestPassedDialog(QtWidgets.QDialog):
         self.setLayout(layout)
     
     @staticmethod
-    def show_passed(parent=None) -> bool:
+    def show_passed(parent=None, work_order: str | None = None, part_number: str | None = None) -> bool:
         """
-        Show the test passed dialog.
-        
+        Show the test passed dialog and optionally schedule a QC print.
+
+        If `work_order` and `part_number` are provided and the `print_qc`
+        helper is available, this schedules `print_qc.print_message()` to
+        run 1 second after the dialog is shown (so printing occurs while the
+        dialog is visible).
+
         Returns:
             True when user clicks CONTINUE
         """
         dialog = TestPassedDialog(parent)
+
+        # Schedule QC print 1s after dialog is shown (if possible)
+        if work_order and part_number:
+            try:
+                import element_tester.system.procedures.print_qc as print_qc  # local import
+
+                def _do_print():
+                    try:
+                        # QTimer already enforces the 1s delay below; call with no extra delay
+                        print_qc.print_message(work_order, part_number, delay_s=0.0)
+                    except Exception:
+                        pass
+
+                QtCore.QTimer.singleShot(1000, _do_print)
+            except Exception:
+                # If helper not available, ignore silently
+                pass
+
         result = dialog.exec()
         return result == QtWidgets.QDialog.DialogCode.Accepted

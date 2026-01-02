@@ -48,7 +48,8 @@ class HipotTestSequence:
         keep_relay_closed: bool = False,
         reset_after_test: bool = True,
         total_test_duration_s: float = 5.0,
-        reset_delay_after_result_s: float = 2.0
+        reset_delay_after_result_s: float = 2.0,
+        file_index: int = 1
     ) -> tuple[bool, str]:
         """
         Execute complete hipot test sequence.
@@ -63,8 +64,9 @@ class HipotTestSequence:
             (passed, result_string): Test outcome and raw result
         """
         return hipot_procs.run_hipot_test(
-            relay_driver=self.relay_driver,
+            erb_driver=self.relay_driver,
             hipot_driver=self.hipot_driver,
+            file_index=file_index,
             keep_relay_closed=keep_relay_closed,
             reset_after_test=reset_after_test,
             total_test_duration_s=total_test_duration_s,
@@ -78,7 +80,7 @@ class HipotTestSequence:
     
     def open_relay(self) -> None:
         """Open all relays (disable hipot circuit)."""
-        hipot_procs.open_hipot_relay(self.relay_driver, logger=self.log)
+        hipot_procs.open_all_relays(self.relay_driver, logger=self.log)
 
 def main():
     """
@@ -116,7 +118,7 @@ def main():
         port_high=13,
         simulate=args.simulate
     )
-    
+
     hipot_drv = AR3865Driver(
         resource='serial://COM6',
         baudrate=38400,  # AR3865 uses 38400 baud
@@ -138,7 +140,9 @@ def main():
         logger.info("Starting hipot test sequence")
         logger.info("=" * 60)
         
-        passed, result = hipot_procs.run_hipot_test(relay_drv, hipot_drv, logger=logger)
+        # Choose FL 2 for 440/480V units per operator selection
+        file_index = 2 if int(args.voltage) in (440, 480) else 1
+        passed, result = hipot_procs.run_hipot_test(relay_drv, hipot_drv, file_index=file_index, logger=logger)
         
         logger.info("=" * 60)
         if passed:
