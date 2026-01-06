@@ -7,7 +7,8 @@ This will be a program for the Frymaster Element Tester to test the high potenti
 - Step 3: Activate the virtual environment with these commands in that order and you should see a (.venv) appear in front of the location you cd into -->
   - SetExecutionPolicy -Scope Process -ExecutionPolicy Bypass
   - & "C:\Files\element tester\Element_Tester\.venv\Scripts\Activate.ps1"
-- Step 4: Run this command --> 
+- Step 4: Run this command --> python build_application.py
+  - This should build and overrite the previous version of the application
 
-pyinstaller --clean --noconfirm --onedir --windowed --name ElementTester .\src\element_tester\system\core\test_runner.py
+
   
