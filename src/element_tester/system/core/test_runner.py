@@ -6,6 +6,7 @@ import time
 import json
 from datetime import datetime
 import sys
+import concurrent.futures
 
 
 # Make sure .../src is on sys.path so `element_tester` is importable
@@ -204,7 +205,7 @@ class TestRunner:
                         vendor_id=0x1a86,
                         product_id=0xe429,
                         simulate=False,
-                        timeout_ms=5000,
+                        timeout_ms=2000,  # 2 second timeout per read attempt
                         logger=self.log
                     )
                     self.meter_driver.initialize()
@@ -714,6 +715,7 @@ class TestRunner:
             # Real measurements using meter driver
             left_vals = []
             right_vals = []
+            timeout_occurred = False  # Track if any measurement timed out
             
             # Ensure all relays are open before starting measurements
             self.log.info("MEAS: Opening all relays before starting measurements")
@@ -745,7 +747,7 @@ class TestRunner:
                     # Close relays
                     self.log.info(f"MEAS: Closing relays for {config_name}")
                     try:
-                        close_func(self.relay_driver, delay_ms=200.0, logger=self.log)
+                        close_func(self.relay_driver, delay_ms=100.0, logger=self.log)
                         self.log.info(f"MEAS: Relays closed successfully for {config_name}")
                     except Exception as e:
                         self.log.error(f"MEAS: Failed to close relays for {config_name}: {e}", exc_info=True)
@@ -761,107 +763,79 @@ class TestRunner:
                         self.log.error(f"MEAS: Failed to flush buffer: {e}", exc_info=True)
                         raise
                     
-                    # Wait 2 seconds after relay closure before polling
-                    self.log.info(f"MEAS: Waiting 2 seconds after relay closure before polling...")
-                    QtWidgets.QApplication.processEvents()  # Keep UI responsive
-                    time.sleep(2.0)
+                    # Single timeout for entire position measurement (10 seconds max)
+                    self.log.info(f"MEAS: Reading {config_name} (10 second timeout)...")
                     QtWidgets.QApplication.processEvents()  # Keep UI responsive
                     
-                    # Poll for mode '1' (resistance mode)
-                    self.log.info(f"MEAS: Polling for resistance mode...")
-                    mode_found = False
-                    max_attempts = 30
-                    for attempt in range(max_attempts):
-                        QtWidgets.QApplication.processEvents()  # Keep UI responsive
+                    import threading
+                    result_holder = {"reading": None, "done": False}
+                    
+                    def _do_read():
                         try:
-                            reading = self.meter_driver.read_value()
-                            if reading.raw_packet and len(reading.raw_packet) > 5:
-                                mode_char = chr(reading.raw_packet[5])
-                                self.log.debug(f"MEAS: Attempt {attempt+1}/{max_attempts} - mode='{mode_char}'")
-                                if mode_char in ['1', '0']:  # Accept both resistance modes
-                                    mode_found = True
-                                    self.log.info(f"MEAS: Mode '{mode_char}' detected after {attempt+1} attempts")
-                                    break
+                            result_holder["reading"] = self.meter_driver.read_value()
                         except Exception as e:
-                            self.log.error(f"MEAS: Error in polling attempt {attempt+1}: {e}", exc_info=True)
-                        time.sleep(1.2)
-                        QtWidgets.QApplication.processEvents()  # Keep UI responsive
+                            self.log.error(f"MEAS: Read error: {e}")
+                        result_holder["done"] = True
                     
-                    if mode_found:
-                        # Take 3 samples and average
-                        self.log.info(f"MEAS: Taking 3 samples for {config_name}")
-                        QtWidgets.QApplication.processEvents()  # Keep UI responsive
-                        readings = []
-                        for sample_num in range(3):
-                            QtWidgets.QApplication.processEvents()  # Keep UI responsive
-                            try:
-                                reading = self.meter_driver.read_value()
-                                if reading.value is not None:
-                                    readings.append(reading.value)
-                                    self.log.info(f"MEAS: Sample {sample_num+1}/3 = {reading.value:.3f} {reading.unit}")
-                                else:
-                                    self.log.warning(f"MEAS: Sample {sample_num+1}/3 invalid")
-                            except Exception as e:
-                                self.log.error(f"MEAS: Error reading sample {sample_num+1}: {e}", exc_info=True)
-                            time.sleep(1.2)
-                            QtWidgets.QApplication.processEvents()  # Keep UI responsive
+                    read_thread = threading.Thread(target=_do_read, daemon=True)
+                    read_thread.start()
+                    
+                    # Wait up to 10 seconds total for this position
+                    start_time = time.time()
+                    max_wait = 10.0
+                    while not result_holder["done"] and (time.time() - start_time) < max_wait:
+                        time.sleep(0.1)
+                        QtWidgets.QApplication.processEvents()
+                    
+                    reading = result_holder["reading"]
+                    
+                    if reading is not None and reading.value is not None:
+                        # Got a valid reading
+                        avg = round(reading.value, 1)
+                        left_vals.append(avg)
+                        right_vals.append(avg)
+                        self.log.info(f"MEAS: {config_name} = {avg:.1f} Ω")
                         
-                        if readings:
-                            avg = sum(readings) / len(readings)
-                            # Round to 1 decimal place
-                            avg = round(avg, 1)
-                            # Use same value for left and right (simultaneous measurement)
-                            left_vals.append(avg)
-                            right_vals.append(avg)
-                            self.log.info(f"MEAS: {config_name} = {avg:.1f} Ω (from {len(readings)} samples)")
-                            
-                            # Update UI immediately for this measurement
-                            # Determine pass/fail based on resistance range
-                            cfg = getattr(self, "_selected_config", None)
-                            rmin = rmax = None
-                            if cfg and isinstance(cfg, dict):
-                                rr = cfg.get("resistance_range")
-                                if isinstance(rr, (list, tuple)) and len(rr) == 2:
-                                    try:
-                                        rmin = float(rr[0])
-                                        rmax = float(rr[1])
-                                    except Exception:
-                                        pass
-                            
-                            # Update LEFT
-                            l_pass = None
-                            if rmin is not None and rmax is not None:
-                                l_pass = (rmin <= avg <= rmax)
-                            ui.update_measurement("L", row_idx, f"{config_name}: {avg:.1f} Ω", l_pass)
-                            QtWidgets.QApplication.processEvents()
-                            try:
-                                ui.append_measurement_log(f"Measured {config_name} LEFT: {avg:.1f} Ω - {'OK' if l_pass else 'FAIL' if l_pass is False else 'N/A'}")
-                            except Exception:
-                                ui.append_hypot_log(f"Measured {config_name} LEFT: {avg:.1f} Ω")
-                            
-                            # Update RIGHT
-                            r_pass = None
-                            if rmin is not None and rmax is not None:
-                                r_pass = (rmin <= avg <= rmax)
-                            ui.update_measurement("R", row_idx, f"{config_name}: {avg:.1f} Ω", r_pass)
-                            QtWidgets.QApplication.processEvents()
-                            try:
-                                ui.append_measurement_log(f"Measured {config_name} RIGHT: {avg:.1f} Ω - {'OK' if r_pass else 'FAIL' if r_pass is False else 'N/A'}")
-                            except Exception:
-                                ui.append_hypot_log(f"Measured {config_name} RIGHT: {avg:.1f} Ω")
-                        else:
-                            left_vals.append(0.0)
-                            right_vals.append(0.0)
-                            self.log.warning(f"MEAS: {config_name} - no valid readings collected")
-                            # Update UI with error
-                            ui.update_measurement("L", row_idx, f"{config_name}: ERROR", False)
-                            ui.update_measurement("R", row_idx, f"{config_name}: ERROR", False)
-                            QtWidgets.QApplication.processEvents()
+                        # Determine pass/fail based on resistance range
+                        cfg = getattr(self, "_selected_config", None)
+                        rmin = rmax = None
+                        if cfg and isinstance(cfg, dict):
+                            rr = cfg.get("resistance_range")
+                            if isinstance(rr, (list, tuple)) and len(rr) == 2:
+                                try:
+                                    rmin = float(rr[0])
+                                    rmax = float(rr[1])
+                                except Exception:
+                                    pass
+                        
+                        # Update LEFT
+                        l_pass = None
+                        if rmin is not None and rmax is not None:
+                            l_pass = (rmin <= avg <= rmax)
+                        ui.update_measurement("L", row_idx, f"{config_name}: {avg:.1f} Ω", l_pass)
+                        QtWidgets.QApplication.processEvents()
+                        try:
+                            ui.append_measurement_log(f"Measured {config_name} LEFT: {avg:.1f} Ω - {'OK' if l_pass else 'FAIL' if l_pass is False else 'N/A'}")
+                        except Exception:
+                            ui.append_hypot_log(f"Measured {config_name} LEFT: {avg:.1f} Ω")
+                        
+                        # Update RIGHT
+                        r_pass = None
+                        if rmin is not None and rmax is not None:
+                            r_pass = (rmin <= avg <= rmax)
+                        ui.update_measurement("R", row_idx, f"{config_name}: {avg:.1f} Ω", r_pass)
+                        QtWidgets.QApplication.processEvents()
+                        try:
+                            ui.append_measurement_log(f"Measured {config_name} RIGHT: {avg:.1f} Ω - {'OK' if r_pass else 'FAIL' if r_pass is False else 'N/A'}")
+                        except Exception:
+                            ui.append_hypot_log(f"Measured {config_name} RIGHT: {avg:.1f} Ω")
                     else:
+                        # Timeout or invalid reading
                         left_vals.append(0.0)
                         right_vals.append(0.0)
-                        self.log.warning(f"MEAS: {config_name} - mode not detected after {max_attempts} attempts")
-                        # Update UI with timeout error
+                        timeout_occurred = True
+                        elapsed = time.time() - start_time
+                        self.log.warning(f"MEAS: {config_name} - TIMEOUT after {elapsed:.1f}s")
                         ui.update_measurement("L", row_idx, f"{config_name}: TIMEOUT", False)
                         ui.update_measurement("R", row_idx, f"{config_name}: TIMEOUT", False)
                         QtWidgets.QApplication.processEvents()
@@ -869,7 +843,7 @@ class TestRunner:
                     # Open relays
                     self.log.info(f"MEAS: Opening relays for {config_name}")
                     try:
-                        open_func(self.relay_driver, delay_ms=100.0, logger=self.log)
+                        open_func(self.relay_driver, delay_ms=50.0, logger=self.log)
                         self.log.info(f"MEAS: Relays opened successfully")
                     except Exception as e:
                         self.log.error(f"MEAS: Failed to open relays: {e}", exc_info=True)
@@ -889,6 +863,7 @@ class TestRunner:
             self.log.info("MEAS: Using simulated values (no meter hardware)")
             left_vals = [6.0, 7.0, 6.0]
             right_vals = [6.0, 7.0, 6.0]
+            timeout_occurred = False  # No timeout in simulated mode
             
             # For simulated mode, need to update UI with fake values
             # Determine expected resistance range from selected configuration if present
@@ -980,7 +955,11 @@ class TestRunner:
                 except Exception:
                     pass
         
-        if rmin is not None and rmax is not None:
+        # Check for timeout first - takes priority over range checks
+        if timeout_occurred:
+            passed = False
+            msg = "Problem with the UT61xP measurement application. Call (318-272-3118)"
+        elif rmin is not None and rmax is not None:
             all_ok = True
             for val in left_vals + right_vals:
                 if val == 0.0 or not (rmin <= val <= rmax):

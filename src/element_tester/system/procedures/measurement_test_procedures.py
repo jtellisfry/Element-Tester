@@ -61,10 +61,9 @@ def close_pin1to6(
     log = logger or _log
     try:
         relay_driver.all_off()
-        time.sleep(0.5)
+        time.sleep(0.1)
         relay_driver.set_relay(4, True)  # Meter position (relay 5, bit 4)
-        log.info("RELAY: Waiting 1 second after closing relay 5 (bit 4)")
-        time.sleep(3.0)  # 3 second delay after closing relay 5
+        time.sleep(0.3)  # Brief settling delay
         time.sleep(delay_ms / 1000.0)
         log.info(f"RELAY: Pin1to6 closed with {delay_ms}ms settling delay")
     except Exception as e:
@@ -87,8 +86,6 @@ def open_pin1to6(
     """
     log = logger or _log
     try:
-        log.info("RELAY: Waiting 1 second before opening relay 5 (bit 4)")
-        time.sleep(1.0)  # 1 second delay before opening relay 5
         relay_driver.all_off()
         time.sleep(delay_ms / 1000.0)
         log.info(f"RELAY: Pin1to6 opened with {delay_ms}ms delay")

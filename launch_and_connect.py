@@ -18,6 +18,28 @@ import win32gui
 import win32con
 
 
+def wait_for_desktop(timeout=90):
+    """Wait for Windows desktop to be ready by checking for explorer.exe."""
+    start = time.time()
+    while time.time() - start < timeout:
+        # Check Explorer
+        result = subprocess.run(
+            ["tasklist"],
+            capture_output=True,
+            text=True
+        )
+        if "explorer.exe" in result.stdout.lower():
+            return True
+        time.sleep(2)
+    return False
+
+
+print("Waiting for desktop...")
+if not wait_for_desktop():
+    print("Desktop never became ready. Exiting.")
+    exit(1)
+
+
 UT61E_BATCH = Path(r"C:\Files\element tester\Element_Tester\ut61xp_elevated.bat")
 
 # Window title patterns to search for

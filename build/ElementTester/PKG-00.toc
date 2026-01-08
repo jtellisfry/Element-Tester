@@ -42,6 +42,10 @@
    'C:\\Files\\element '
    'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
+  ('pyi_rth_pyqt6',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt6.py',
+   'PYSOURCE'),
   ('pyi_rth_pkgutil',
    'C:\\Files\\element '
    'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
@@ -49,10 +53,6 @@
   ('pyi_rth_multiprocessing',
    'C:\\Files\\element '
    'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
-   'PYSOURCE'),
-  ('pyi_rth_pyqt6',
-   'C:\\Files\\element '
-   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt6.py',
    'PYSOURCE'),
   ('test_runner',
    'C:\\Files\\element '

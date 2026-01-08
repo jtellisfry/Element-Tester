@@ -1,0 +1,36 @@
+Timestamp: 2026-01-08T12:45:01
+Mode: normal
+Work Order #: testing
+Part #: testing
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.3)}
+Hypot Result: Hipot test not run
+Measurement Result: LP1to6: 0.0 | LP2to5:  | LP3to4:  | RP1to6: 0.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2026-01-08T12:50:29
+Mode: normal
+Work Order #: testing
+Part #: testing
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.3)}
+Hypot Result: Hipot test not run
+Measurement Result: LP1to6: 0.0 | LP2to5:  | LP3to4:  | RP1to6: 0.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2026-01-08T13:04:46
+Mode: normal
+Work Order #: testing
+Part #: testing
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.3)}
+Hypot Result: Hipot test not run
+Measurement Result: LP1to6: 0.0 | LP2to5:  | LP3to4:  | RP1to6: 0.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2026-01-08T13:05:23
+Mode: normal
+Work Order #: testing
+Part #: testing
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (9.1, 9.8)}
+Hypot Result: Hipot test not run
+Measurement Result: LP1to6: 0.0 | LP2to5:  | LP3to4:  | RP1to6: 0.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------

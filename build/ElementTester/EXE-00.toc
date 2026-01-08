@@ -66,6 +66,10 @@
    'C:\\Files\\element '
    'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
+  ('pyi_rth_pyqt6',
+   'C:\\Files\\element '
+   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt6.py',
+   'PYSOURCE'),
   ('pyi_rth_pkgutil',
    'C:\\Files\\element '
    'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
@@ -74,10 +78,6 @@
    'C:\\Files\\element '
    'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
    'PYSOURCE'),
-  ('pyi_rth_pyqt6',
-   'C:\\Files\\element '
-   'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pyqt6.py',
-   'PYSOURCE'),
   ('test_runner',
    'C:\\Files\\element '
    'tester\\Element_Tester\\src\\element_tester\\system\\core\\test_runner.py',
@@ -85,7 +85,7 @@
  [],
  False,
  False,
- 1767892156,
+ 1767899204,
  [('runw.exe',
    'C:\\Files\\element '
    'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',
