@@ -1,593 +1,75 @@
-2026-01-05 15:13:07.391789 | === Script started ===
-2026-01-05 15:13:07.393447 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:13:07.395029 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:13:07.396514 | ======================================================================
-2026-01-05 15:13:07.397836 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:13:07.399154 | ======================================================================
-2026-01-05 15:13:07.401341 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:13:07.403235 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:13:07.404982 | 
-2. Launching UT61E+ software...
-2026-01-05 15:13:07.424890 |    ✓ Software launched
-2026-01-05 15:13:07.426308 | 
-3. Waiting for window to load...
-2026-01-05 15:13:19.428782 |    Searching for window...
-2026-01-05 15:13:19.432624 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:13:19.434111 | 
-4. Clicking CONNECT button at relative position (183, 150)...
-2026-01-05 15:13:19.435537 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:13:19.436855 |    Calculated click position: (321, 184)
-2026-01-05 15:13:19.438234 |    Current mouse position before move: Point(x=787, y=313)
-2026-01-05 15:13:21.103427 |    Mouse moved to: Point(x=321, y=184)
-2026-01-05 15:13:21.219200 |    ✓ Clicked!
-2026-01-05 15:13:21.220743 | 
-5. Waiting for meter connection...
-2026-01-05 15:13:24.222986 |    ✓ Connected
-2026-01-05 15:13:24.224549 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:13:24.232385 |    ✓ Minimized
-2026-01-05 15:13:24.234942 | 
-======================================================================
-2026-01-05 15:13:24.240472 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:13:24.256325 | ======================================================================
-2026-01-05 15:13:24.258252 | Software is running in background. Ready for HID reader.
-2026-01-05 15:13:24.259908 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:17:37.176066 | === Script started ===
-2026-01-05 15:17:37.178424 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:17:37.180067 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:17:37.181770 | ======================================================================
-2026-01-05 15:17:37.183417 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:17:37.185401 | ======================================================================
-2026-01-05 15:17:37.188596 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:17:37.190906 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:17:37.200213 | 
-2. Launching UT61E+ software...
-2026-01-05 15:17:37.222101 |    ✓ Software launched
-2026-01-05 15:17:37.223932 | 
-3. Waiting for window to load...
-2026-01-05 15:17:49.226338 |    Searching for window...
-2026-01-05 15:17:49.230795 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:17:49.232441 | 
-4. Clicking CONNECT button at relative position (183, 150)...
-2026-01-05 15:17:49.234018 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:17:49.235486 |    Calculated click position: (321, 184)
-2026-01-05 15:17:49.237379 |    Current mouse position before move: Point(x=1165, y=452)
-2026-01-05 15:17:50.904059 |    Mouse moved to: Point(x=1170, y=466)
-2026-01-05 15:17:51.016099 |    ✓ Clicked!
-2026-01-05 15:17:51.017814 | 
-5. Waiting for meter connection...
-2026-01-05 15:17:54.019794 |    ✓ Connected
-2026-01-05 15:17:54.021733 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:17:54.023496 |    ✓ Minimized
-2026-01-05 15:17:54.025064 | 
-======================================================================
-2026-01-05 15:17:54.026537 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:17:54.028023 | ======================================================================
-2026-01-05 15:17:54.029459 | Software is running in background. Ready for HID reader.
-2026-01-05 15:17:54.030958 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:18:58.477145 | === Script started ===
-2026-01-05 15:18:58.478691 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:18:58.480139 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:18:58.481599 | ======================================================================
-2026-01-05 15:18:58.483071 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:18:58.484509 | ======================================================================
-2026-01-05 15:18:58.485959 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:18:58.487566 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:18:58.489061 | 
-2. Launching UT61E+ software...
-2026-01-05 15:18:58.501734 |    ✓ Software launched
-2026-01-05 15:18:58.503314 | 
-3. Waiting for window to load...
-2026-01-05 15:19:10.506151 |    Searching for window...
-2026-01-05 15:19:10.509343 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:19:10.510930 | 
-4. Clicking CONNECT button at relative position (180, 80)...
-2026-01-05 15:19:10.512553 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:19:10.514093 |    Calculated click position: (318, 114)
-2026-01-05 15:19:10.515689 |    Current mouse position before move: Point(x=774, y=370)
-2026-01-05 15:19:12.182875 |    Mouse moved to: Point(x=318, y=114)
-2026-01-05 15:19:12.288873 |    ✓ Clicked!
-2026-01-05 15:19:12.290609 | 
-5. Waiting for meter connection...
-2026-01-05 15:19:15.292899 |    ✓ Connected
-2026-01-05 15:19:15.294738 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:19:15.303482 |    ✓ Minimized
-2026-01-05 15:19:15.306407 | 
-======================================================================
-2026-01-05 15:19:15.310945 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:19:15.313912 | ======================================================================
-2026-01-05 15:19:15.320295 | Software is running in background. Ready for HID reader.
-2026-01-05 15:19:15.322757 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:21:21.110459 | === Script started ===
-2026-01-05 15:21:21.112771 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:21:21.114556 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:21:21.116157 | ======================================================================
-2026-01-05 15:21:21.117724 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:21:21.119416 | ======================================================================
-2026-01-05 15:21:21.121128 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:21:21.122738 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:21:21.124450 | 
-2. Launching UT61E+ software...
-2026-01-05 15:21:21.138639 |    ✓ Software launched
-2026-01-05 15:21:21.140398 | 
-3. Waiting for window to load...
-2026-01-05 15:21:33.143514 |    Searching for window...
-2026-01-05 15:21:33.147926 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:21:33.149729 | 
-4. Clicking CONNECT button at relative position (180, 80)...
-2026-01-05 15:21:33.151384 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:21:33.153001 |    Calculated click position: (318, 114)
-2026-01-05 15:21:33.154697 |    Current mouse position before move: Point(x=758, y=490)
-2026-01-05 15:21:34.838432 |    Mouse moved to: Point(x=318, y=114)
-2026-01-05 15:21:34.956625 |    ✓ Clicked!
-2026-01-05 15:21:34.958485 | 
-5. Waiting for meter connection...
-2026-01-05 15:21:37.960868 |    ✓ Connected
-2026-01-05 15:21:37.962785 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:21:37.973065 |    ✓ Minimized
-2026-01-05 15:21:37.976319 | 
-======================================================================
-2026-01-05 15:21:37.978535 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:21:37.985325 | ======================================================================
-2026-01-05 15:21:37.992536 | Software is running in background. Ready for HID reader.
-2026-01-05 15:21:37.994322 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:22:20.376979 | === Script started ===
-2026-01-05 15:22:20.378827 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:22:20.380676 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:22:20.382439 | ======================================================================
-2026-01-05 15:22:20.384401 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:22:20.386167 | ======================================================================
-2026-01-05 15:22:20.387926 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:22:20.389814 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:22:20.391610 | 
-2. Launching UT61E+ software...
-2026-01-05 15:22:20.404575 |    ✓ Software launched
-2026-01-05 15:22:20.406274 | 
-3. Waiting for window to load...
-2026-01-05 15:22:32.409692 |    Searching for window...
-2026-01-05 15:22:32.413091 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:22:32.414875 | 
-4. Clicking CONNECT button at relative position (180, 150)...
-2026-01-05 15:22:32.416654 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:22:32.418400 |    Calculated click position: (318, 184)
-2026-01-05 15:22:32.420258 |    Current mouse position before move: Point(x=669, y=531)
-2026-01-05 15:22:34.087448 |    Mouse moved to: Point(x=318, y=184)
-2026-01-05 15:22:34.196237 |    ✓ Clicked!
-2026-01-05 15:22:34.198106 | 
-5. Waiting for meter connection...
-2026-01-05 15:22:37.200723 |    ✓ Connected
-2026-01-05 15:22:37.202782 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:22:37.212636 |    ✓ Minimized
-2026-01-05 15:22:37.215137 | 
-======================================================================
-2026-01-05 15:22:37.220565 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:22:37.229108 | ======================================================================
-2026-01-05 15:22:37.233092 | Software is running in background. Ready for HID reader.
-2026-01-05 15:22:37.235652 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:23:27.758280 | === Script started ===
-2026-01-05 15:23:27.760135 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:23:27.761807 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:23:27.763472 | ======================================================================
-2026-01-05 15:23:27.765170 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:23:27.767090 | ======================================================================
-2026-01-05 15:23:27.768801 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:23:27.770590 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:23:27.772265 | 
-2. Launching UT61E+ software...
-2026-01-05 15:23:27.786735 |    ✓ Software launched
-2026-01-05 15:23:27.788542 | 
-3. Waiting for window to load...
-2026-01-05 15:23:39.791386 |    Searching for window...
-2026-01-05 15:23:39.794832 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:23:39.796970 | 
-4. Clicking CONNECT button at relative position (180, 220)...
-2026-01-05 15:23:39.799042 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:23:39.801156 |    Calculated click position: (318, 254)
-2026-01-05 15:23:39.803661 |    Current mouse position before move: Point(x=757, y=594)
-2026-01-05 15:23:41.470604 |    Mouse moved to: Point(x=318, y=254)
-2026-01-05 15:23:41.589526 |    ✓ Clicked!
-2026-01-05 15:23:41.591595 | 
-5. Waiting for meter connection...
-2026-01-05 15:23:44.594148 |    ✓ Connected
-2026-01-05 15:23:44.596333 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:23:44.607970 |    ✓ Minimized
-2026-01-05 15:23:44.614361 | 
-======================================================================
-2026-01-05 15:23:44.621170 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:23:44.629847 | ======================================================================
-2026-01-05 15:23:44.632181 | Software is running in background. Ready for HID reader.
-2026-01-05 15:23:44.634302 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:25:38.169925 | === Script started ===
-2026-01-05 15:25:38.172472 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:25:38.174724 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:25:38.176863 | ======================================================================
-2026-01-05 15:25:38.178920 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:25:38.180902 | ======================================================================
-2026-01-05 15:25:38.183514 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:25:38.186320 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:25:38.188699 | 
-2. Launching UT61E+ software...
-2026-01-05 15:25:38.207569 |    ✓ Software launched
-2026-01-05 15:25:38.209766 | 
-3. Waiting for window to load...
-2026-01-05 15:25:50.212667 |    Searching for window...
-2026-01-05 15:25:50.222877 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:25:50.225024 | 
-4. Clicking CONNECT button at relative position (180, 80)...
-2026-01-05 15:25:50.227103 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:25:50.229146 |    Calculated click position: (318, 114)
-2026-01-05 15:25:50.231283 |    Current mouse position before move: Point(x=575, y=592)
-2026-01-05 15:25:51.898067 |    Mouse moved to: Point(x=575, y=592)
-2026-01-05 15:25:52.014327 |    ✓ Clicked!
-2026-01-05 15:25:52.016560 | 
-5. Waiting for meter connection...
-2026-01-05 15:25:55.019674 |    ✓ Connected
-2026-01-05 15:25:55.022029 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:25:55.024156 |    ✓ Minimized
-2026-01-05 15:25:55.026210 | 
-======================================================================
-2026-01-05 15:25:55.028297 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:25:55.030401 | ======================================================================
-2026-01-05 15:25:55.032557 | Software is running in background. Ready for HID reader.
-2026-01-05 15:25:55.034693 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:26:30.633180 | === Script started ===
-2026-01-05 15:26:30.635313 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:26:30.637410 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:26:30.639902 | ======================================================================
-2026-01-05 15:26:30.642154 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:26:30.644294 | ======================================================================
-2026-01-05 15:26:30.646557 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:26:30.648918 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:26:30.651273 | 
-2. Launching UT61E+ software...
-2026-01-05 15:26:30.666270 |    ✓ Software launched
-2026-01-05 15:26:30.668432 | 
-3. Waiting for window to load...
-2026-01-05 15:26:42.671402 |    Searching for window...
-2026-01-05 15:26:42.674970 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:26:42.677045 | 
-4. Clicking CONNECT button at relative position (180, 80)...
-2026-01-05 15:26:42.679108 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:26:42.681138 |    Calculated click position: (318, 114)
-2026-01-05 15:26:42.683220 |    Current mouse position before move: Point(x=709, y=598)
-2026-01-05 15:26:44.349067 |    Mouse moved to: Point(x=318, y=114)
-2026-01-05 15:26:44.457335 |    ✓ Clicked!
-2026-01-05 15:26:44.459581 | 
-5. Waiting for meter connection...
-2026-01-05 15:26:47.462604 |    ✓ Connected
-2026-01-05 15:26:47.464914 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:26:47.475778 |    ✓ Minimized
-2026-01-05 15:26:47.479954 | 
-======================================================================
-2026-01-05 15:26:47.484780 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:26:47.487620 | ======================================================================
-2026-01-05 15:26:47.495521 | Software is running in background. Ready for HID reader.
-2026-01-05 15:26:47.504338 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:29:01.942002 | === Script started ===
-2026-01-05 15:29:01.944596 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:29:01.946946 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:29:01.949313 | ======================================================================
-2026-01-05 15:29:01.951618 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:29:01.954004 | ======================================================================
-2026-01-05 15:29:01.956444 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:29:01.958897 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:29:01.961134 | 
-2. Launching UT61E+ software...
-2026-01-05 15:29:01.975767 |    ✓ Software launched
-2026-01-05 15:29:01.977983 | 
-3. Waiting for window to load...
-2026-01-05 15:29:13.981209 |    Searching for window...
-2026-01-05 15:29:13.984863 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:29:13.987339 | 
-4. Clicking CONNECT button at relative position (180, 300)...
-2026-01-05 15:29:13.989554 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:29:13.991681 |    Calculated click position: (318, 334)
-2026-01-05 15:29:13.993885 |    Current mouse position before move: Point(x=713, y=595)
-2026-01-05 15:29:15.661335 |    Mouse moved to: Point(x=318, y=334)
-2026-01-05 15:29:15.781930 |    ✓ Clicked!
-2026-01-05 15:29:15.784295 | 
-5. Waiting for meter connection...
-2026-01-05 15:29:18.787137 |    ✓ Connected
-2026-01-05 15:29:18.789800 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:29:18.801393 |    ✓ Minimized
-2026-01-05 15:29:18.807180 | 
-======================================================================
-2026-01-05 15:29:18.816313 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:29:18.819266 | ======================================================================
-2026-01-05 15:29:18.822119 | Software is running in background. Ready for HID reader.
-2026-01-05 15:29:18.825903 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:29:34.869951 | === Script started ===
-2026-01-05 15:29:34.872162 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:29:34.874351 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:29:34.876492 | ======================================================================
-2026-01-05 15:29:34.878591 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:29:34.880679 | ======================================================================
-2026-01-05 15:29:34.882766 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:29:34.884908 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:29:34.887016 | 
-2. Launching UT61E+ software...
-2026-01-05 15:29:34.900500 |    ✓ Software launched
-2026-01-05 15:29:34.902706 | 
-3. Waiting for window to load...
-2026-01-05 15:29:46.905835 |    Searching for window...
-2026-01-05 15:29:46.909536 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:29:46.911851 | 
-4. Clicking CONNECT button at relative position (180, 50)...
-2026-01-05 15:29:46.914145 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:29:46.916375 |    Calculated click position: (318, 84)
-2026-01-05 15:29:46.918684 |    Current mouse position before move: Point(x=524, y=779)
-2026-01-05 15:29:48.584768 |    Mouse moved to: Point(x=318, y=84)
-2026-01-05 15:29:48.697439 |    ✓ Clicked!
-2026-01-05 15:29:48.699934 | 
-5. Waiting for meter connection...
-2026-01-05 15:29:51.703236 |    ✓ Connected
-2026-01-05 15:29:51.705750 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:29:51.717534 |    ✓ Minimized
-2026-01-05 15:29:51.723892 | 
-======================================================================
-2026-01-05 15:29:51.728499 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:29:51.738814 | ======================================================================
-2026-01-05 15:29:51.741378 | Software is running in background. Ready for HID reader.
-2026-01-05 15:29:51.748447 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:30:04.618337 | === Script started ===
-2026-01-05 15:30:04.620626 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:30:04.622811 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:30:04.625234 | ======================================================================
-2026-01-05 15:30:04.627774 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:30:04.630091 | ======================================================================
-2026-01-05 15:30:04.632324 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:30:04.634592 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:30:04.636790 | 
-2. Launching UT61E+ software...
-2026-01-05 15:30:04.650847 |    ✓ Software launched
-2026-01-05 15:30:04.653191 | 
-3. Waiting for window to load...
-2026-01-05 15:30:16.656601 |    Searching for window...
-2026-01-05 15:30:16.660510 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:30:16.662935 | 
-4. Clicking CONNECT button at relative position (120, 50)...
-2026-01-05 15:30:16.665371 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:30:16.667779 |    Calculated click position: (258, 84)
-2026-01-05 15:30:16.670206 |    Current mouse position before move: Point(x=721, y=595)
-2026-01-05 15:30:18.337101 |    Mouse moved to: Point(x=258, y=84)
-2026-01-05 15:30:18.442290 |    ✓ Clicked!
-2026-01-05 15:30:18.444901 | 
-5. Waiting for meter connection...
-2026-01-05 15:30:21.448102 |    ✓ Connected
-2026-01-05 15:30:21.450684 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:30:21.461659 |    ✓ Minimized
-2026-01-05 15:30:21.466455 | 
-======================================================================
-2026-01-05 15:30:21.470958 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:30:21.483436 | ======================================================================
-2026-01-05 15:30:21.487001 | Software is running in background. Ready for HID reader.
-2026-01-05 15:30:21.492161 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:30:37.377111 | === Script started ===
-2026-01-05 15:30:37.379665 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:30:37.382214 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:30:37.384873 | ======================================================================
-2026-01-05 15:30:37.387478 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:30:37.390360 | ======================================================================
-2026-01-05 15:30:37.392865 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:30:37.395462 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:30:37.397981 | 
-2. Launching UT61E+ software...
-2026-01-05 15:30:37.411750 |    ✓ Software launched
-2026-01-05 15:30:37.414298 | 
-3. Waiting for window to load...
-2026-01-05 15:30:49.417697 |    Searching for window...
-2026-01-05 15:30:49.421533 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:30:49.424073 | 
-4. Clicking CONNECT button at relative position (90, 50)...
-2026-01-05 15:30:49.426709 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:30:49.429344 |    Calculated click position: (228, 84)
-2026-01-05 15:30:49.432030 |    Current mouse position before move: Point(x=777, y=598)
-2026-01-05 15:30:51.099828 |    Mouse moved to: Point(x=228, y=84)
-2026-01-05 15:30:51.205547 |    ✓ Clicked!
-2026-01-05 15:30:51.208275 | 
-5. Waiting for meter connection...
-2026-01-05 15:30:54.211660 |    ✓ Connected
-2026-01-05 15:30:54.214528 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:30:54.225241 |    ✓ Minimized
-2026-01-05 15:30:54.233222 | 
-======================================================================
-2026-01-05 15:30:54.242603 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:30:54.245883 | ======================================================================
-2026-01-05 15:30:54.249337 | Software is running in background. Ready for HID reader.
-2026-01-05 15:30:54.252059 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 15:31:18.835802 | === Script started ===
-2026-01-05 15:31:18.838596 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 15:31:18.841268 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 15:31:18.843943 | ======================================================================
-2026-01-05 15:31:18.846613 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 15:31:18.849265 | ======================================================================
-2026-01-05 15:31:18.851854 | 
-1. Searching for UT61E+ executable...
-2026-01-05 15:31:18.854635 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 15:31:18.857229 | 
-2. Launching UT61E+ software...
-2026-01-05 15:31:18.871934 |    ✓ Software launched
-2026-01-05 15:31:18.874596 | 
-3. Waiting for window to load...
-2026-01-05 15:31:30.878005 |    Searching for window...
-2026-01-05 15:31:30.882116 |    ✓ Window found: 'UT61E+ v2.00 ' at (138, 34)
-2026-01-05 15:31:30.884767 | 
+2026-01-07 14:51:00.816302 | === Script started ===
+2026-01-07 14:51:00.820348 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
+2026-01-07 14:51:00.822158 | CWD: C:\Files\element tester\Element_Tester
+2026-01-07 14:51:00.823644 | ======================================================================
+2026-01-07 14:51:00.825088 | AUTO-LAUNCH UT61E+ AND CONNECT
+2026-01-07 14:51:00.826650 | ======================================================================
+2026-01-07 14:51:00.828293 | 
+1. Minimizing all windows with Win+D...
+2026-01-07 14:51:00.830043 |    ❌ ERROR minimizing windows: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2026-01-07 14:51:00.831561 | 
+2. Launching meter application via batch file...
+2026-01-07 14:51:00.848149 |    ✓ Batch file launched
+2026-01-07 14:51:00.849897 | 
+3. Waiting for meter application window to load...
+2026-01-07 14:51:12.870544 |    Searching for meter application window...
+2026-01-07 14:51:12.889226 |    ✓ Window found: 'UT61E+ and 4 more tabs - File Explorer' at (-32000, -32000)
+2026-01-07 14:51:12.890784 | 
 4. Clicking CONNECT button at relative position (50, 50)...
-2026-01-05 15:31:30.887441 |    Window position: left=138, top=34, width=1016, height=639
-2026-01-05 15:31:30.889988 |    Calculated click position: (188, 84)
-2026-01-05 15:31:30.892583 |    Current mouse position before move: Point(x=731, y=591)
-2026-01-05 15:31:32.558542 |    Mouse moved to: Point(x=188, y=84)
-2026-01-05 15:31:32.681190 |    ✓ Clicked!
-2026-01-05 15:31:32.683977 | 
-5. Waiting for meter connection...
-2026-01-05 15:31:35.687335 |    ✓ Connected
-2026-01-05 15:31:35.690185 | 
-6. Minimizing UT61E+ window...
-2026-01-05 15:31:35.701988 |    ✓ Minimized
-2026-01-05 15:31:35.707942 | 
-======================================================================
-2026-01-05 15:31:35.711525 | ✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)
-2026-01-05 15:31:35.722100 | ======================================================================
-2026-01-05 15:31:35.740481 | Software is running in background. Ready for HID reader.
-2026-01-05 15:31:35.743794 | 
-Press Enter to close software, or Ctrl+C to leave running...
-2026-01-05 17:16:08.453740 | === Script started ===
-2026-01-05 17:16:08.457548 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 17:16:08.460347 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 17:16:08.463238 | ======================================================================
-2026-01-05 17:16:08.466374 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 17:16:08.469293 | ======================================================================
-2026-01-05 17:16:08.471943 | 
-1. Searching for UT61E+ executable...
-2026-01-05 17:16:08.474897 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 17:16:08.477804 | 
-2. Launching UT61E+ software...
-2026-01-05 17:16:08.496077 |    ✓ Software launched
-2026-01-05 17:16:08.502551 | 
-3. Waiting for window to load...
-2026-01-05 17:16:20.505825 |    Searching for window...
-2026-01-05 17:16:20.516269 |    ❌ ERROR: UT61E+ window not found!
-2026-01-05 17:16:20.519578 |    Available windows:
-2026-01-05 17:16:20.523136 |      - User Account Control
-2026-01-05 17:16:20.525948 |      - 
-2026-01-05 17:16:20.528703 |      - C:\WINDOWS\SYSTEM32\cmd.exe
-2026-01-05 17:16:20.531454 |      - Task Scheduler
-2026-01-05 17:16:20.534368 |      - Windows Input Experience
-2026-01-05 17:16:20.537701 |      - 
-2026-01-05 17:16:20.540524 |      - 
-2026-01-05 17:16:20.543230 |      - 
-2026-01-05 17:16:20.545905 |      - 
-2026-01-05 17:16:20.548800 |      - 
-2026-01-05 17:19:30.126775 | === Script started ===
-2026-01-05 17:19:30.132667 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-05 17:19:30.136260 | CWD: C:\Files\element tester\Element_Tester
-2026-01-05 17:19:30.146389 | ======================================================================
-2026-01-05 17:19:30.165298 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-05 17:19:30.181305 | ======================================================================
-2026-01-05 17:19:30.184825 | 
-1. Searching for UT61E+ executable...
-2026-01-05 17:19:30.188989 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-05 17:19:30.195960 | 
-2. Launching UT61E+ software...
-2026-01-05 17:19:30.234791 |    ✓ Software launched
-2026-01-05 17:19:30.253780 | 
-3. Waiting for window to load...
-2026-01-05 17:19:42.282133 |    Searching for window...
-2026-01-05 17:19:42.329533 |    ❌ ERROR: UT61E+ window not found!
-2026-01-05 17:19:42.332339 |    Available windows:
-2026-01-05 17:19:42.342941 |      - 
-2026-01-05 17:19:42.345802 |      - User Account Control
-2026-01-05 17:19:42.348587 |      - 
-2026-01-05 17:19:42.351423 |      - C:\WINDOWS\SYSTEM32\cmd.exe
-2026-01-05 17:19:42.354168 |      - 
-2026-01-05 17:19:42.357440 |      - 
-2026-01-05 17:19:42.360415 |      - 
-2026-01-05 17:19:42.363210 |      - 
-2026-01-05 17:19:42.366042 |      - 
-2026-01-05 17:19:42.368969 |      - 
-2026-01-06 07:13:09.914933 | === Script started ===
-2026-01-06 07:13:09.954628 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-06 07:13:10.033278 | CWD: C:\Files\element tester\Element_Tester
-2026-01-06 07:13:10.050355 | ======================================================================
-2026-01-06 07:13:10.053924 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-06 07:13:10.080317 | ======================================================================
-2026-01-06 07:13:10.084006 | 
-1. Searching for UT61E+ executable...
-2026-01-06 07:13:10.115893 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-06 07:13:10.176602 | 
-2. Launching UT61E+ software...
-2026-01-06 07:13:10.252026 |    ✓ Software launched
-2026-01-06 07:13:10.440732 | 
-3. Waiting for window to load...
-2026-01-06 07:13:22.468688 |    Searching for window...
-2026-01-06 07:13:22.582557 |    ❌ ERROR: UT61E+ window not found!
-2026-01-06 07:13:22.586775 |    Available windows:
-2026-01-06 07:13:22.592821 |      - 
-2026-01-06 07:13:22.595746 |      - User Account Control
-2026-01-06 07:13:22.600774 |      - 
-2026-01-06 07:13:22.603673 |      - C:\WINDOWS\SYSTEM32\cmd.exe
-2026-01-06 07:13:22.606381 |      - 
-2026-01-06 07:13:22.609030 |      - 
-2026-01-06 07:13:22.611612 |      - 
-2026-01-06 07:13:22.614882 |      - 
-2026-01-06 07:13:22.617764 |      - 
-2026-01-06 07:13:22.621807 |      - 
-2026-01-06 07:26:44.148776 | === Script started ===
-2026-01-06 07:26:44.153184 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-06 07:26:44.157900 | CWD: C:\Files\element tester\Element_Tester
-2026-01-06 07:26:44.161422 | ======================================================================
-2026-01-06 07:26:44.165988 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-06 07:26:44.169379 | ======================================================================
-2026-01-06 07:26:44.178719 | 
-1. Searching for UT61E+ executable...
-2026-01-06 07:26:44.183081 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-06 07:26:44.187031 | 
-2. Launching UT61E+ software...
-2026-01-06 07:26:44.210962 |    ✓ Software launched
-2026-01-06 07:26:44.215223 | 
-3. Waiting for window to load...
-2026-01-06 07:26:56.978218 |    Searching for window...
-2026-01-06 07:26:57.038106 |    ❌ ERROR: UT61E+ window not found!
-2026-01-06 07:26:57.041502 |    Available windows:
-2026-01-06 07:26:57.110415 |      - 
-2026-01-06 07:26:57.111941 |      - 
-2026-01-06 07:26:57.113393 |      - User Account Control
-2026-01-06 07:26:57.114789 |      - 
-2026-01-06 07:26:57.118135 |      - C:\WINDOWS\SYSTEM32\cmd.exe
-2026-01-06 07:26:57.119707 |      - User Accounts
-2026-01-06 07:26:57.121384 |      - Windows Input Experience
-2026-01-06 07:26:57.128262 |      - PXI/PCI Explorer
-2026-01-06 07:26:57.135245 |      - 
-2026-01-06 07:26:57.142020 |      - 
-2026-01-06 07:32:40.925863 | === Script started ===
-2026-01-06 07:32:41.089985 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
-2026-01-06 07:32:41.091008 | CWD: C:\Files\element tester\Element_Tester
-2026-01-06 07:32:41.092125 | ======================================================================
-2026-01-06 07:32:41.093408 | AUTO-LAUNCH UT61E+ AND CONNECT
-2026-01-06 07:32:41.094592 | ======================================================================
-2026-01-06 07:32:41.095788 | 
-1. Searching for UT61E+ executable...
-2026-01-06 07:32:41.201093 |    ✓ Found: C:\Program Files (x86)\UT61E+\UT61xP.exe
-2026-01-06 07:32:41.202811 | 
-2. Launching UT61E+ software...
-2026-01-06 07:32:41.666542 |    ✓ Software launched
-2026-01-06 07:32:41.715525 | 
-3. Waiting for window to load...
-2026-01-06 07:32:53.751154 |    Searching for window...
-2026-01-06 07:32:53.842096 |    ❌ ERROR: UT61E+ window not found!
-2026-01-06 07:32:53.843777 |    Available windows:
+2026-01-07 14:51:12.892388 |    Window position: left=-32000, top=-32000, width=160, height=28
+2026-01-07 14:51:12.893810 |    Calculated click position: (-31950, -31950)
+2026-01-07 14:51:12.895493 |    Current mouse position before move: Point(x=0, y=0)
+2026-01-07 14:55:26.750130 | === Script started ===
+2026-01-07 14:55:26.758858 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
+2026-01-07 14:55:26.760324 | CWD: C:\Files\element tester\Element_Tester
+2026-01-07 14:55:26.761717 | ======================================================================
+2026-01-07 14:55:26.763081 | AUTO-LAUNCH UT61E+ AND CONNECT
+2026-01-07 14:55:26.764461 | ======================================================================
+2026-01-07 14:55:26.765856 | 
+1. Minimizing all windows with Win+D...
+2026-01-07 14:55:26.957940 |    ✓ All windows minimized
+2026-01-07 14:55:26.976284 | 
+2. Launching meter application via batch file...
+2026-01-07 14:55:27.188677 |    ✓ Batch file launched
+2026-01-07 14:55:27.190187 | 
+3. Waiting for meter application window to load...
+2026-01-07 14:55:39.195837 |    Searching for meter application window...
+2026-01-07 14:55:39.202190 |    ❌ ERROR: Meter application window not found!
+2026-01-07 14:55:39.203727 |    Available windows:
+2026-01-07 14:55:39.205541 |      - 
+2026-01-07 14:55:39.207077 |      - Program Manager
+2026-01-07 14:55:39.208631 |      - Windows Input Experience
+2026-01-07 14:55:39.210247 |      - 
+2026-01-07 14:55:39.211751 |      - 
+2026-01-07 14:55:39.213198 |      - 
+2026-01-07 14:55:39.214648 |      - 
+2026-01-07 14:55:39.216641 |      - 
+2026-01-07 14:55:39.218803 |      - 
+2026-01-07 14:55:39.220449 |      - 
+2026-01-07 15:23:44.081328 | === Script started ===
+2026-01-07 15:23:44.083279 | Python: C:\Files\element tester\Element_Tester\.venv\Scripts\python.exe
+2026-01-07 15:23:44.084825 | CWD: C:\Files\element tester\Element_Tester
+2026-01-07 15:23:44.086360 | ======================================================================
+2026-01-07 15:23:44.087971 | AUTO-LAUNCH UT61E+ AND CONNECT
+2026-01-07 15:23:44.089666 | ======================================================================
+2026-01-07 15:23:44.091288 | 
+1. Minimizing all windows with Win+D...
+2026-01-07 15:23:44.093160 |    ❌ ERROR minimizing windows: PyAutoGUI fail-safe triggered from mouse moving to a corner of the screen. To disable this fail-safe, set pyautogui.FAILSAFE to False. DISABLING FAIL-SAFE IS NOT RECOMMENDED.
+2026-01-07 15:23:44.113930 | 
+2. Launching meter application via batch file...
+2026-01-07 15:23:44.125968 |    ✓ Batch file launched
+2026-01-07 15:23:44.128629 | 
+3. Waiting for meter application window to load...
+2026-01-07 15:23:56.132175 |    Searching for meter application window...
+2026-01-07 15:23:56.137395 |    ❌ ERROR: Meter application window not found!
+2026-01-07 15:23:56.139193 |    Available windows:
+2026-01-07 15:23:56.141164 |      - 
+2026-01-07 15:23:56.142773 |      - C:\WINDOWS\SYSTEM32\cmd.exe
+2026-01-07 15:23:56.144363 |      - Windows Input Experience
+2026-01-07 15:23:56.145935 |      - 
+2026-01-07 15:23:56.147527 |      - 
+2026-01-07 15:23:56.149062 |      - 
+2026-01-07 15:23:56.150578 |      - 
+2026-01-07 15:23:56.152231 |      - 
+2026-01-07 15:23:56.153850 |      - Settings
+2026-01-07 15:23:56.155396 |      - Settings

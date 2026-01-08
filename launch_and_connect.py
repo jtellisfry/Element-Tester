@@ -1,131 +1,253 @@
 """
-Auto-launch UT61E+ and Click CONNECT (Optimized Order)
-=======================================================
-Move mouse FIRST, then launch, then click!
+Launch and Connect to UT61E+ Meter Application
+
+Uses pywinauto for reliable Windows GUI automation instead of
+coordinate-based pyautogui clicking.
 """
 
 import subprocess
+import sys
 import time
-import pyautogui
-import pygetwindow as gw
 from pathlib import Path
-import datetime, os, sys
 
-# Logging setup
-LOG = Path(r"C:\Files\element tester\Element_Tester\launch_and_connect_internal.log")
-LOG.parent.mkdir(parents=True, exist_ok=True)
-def log(msg: str):
-    with LOG.open("a", encoding="utf-8") as f:
-        f.write(f"{datetime.datetime.now()} | {msg}\n")
-
-log("=== Script started ===")
-log(f"Python: {sys.executable}")
-log(f"CWD: {os.getcwd()}")
-
-# Possible UT61E+ executable locations
-UT61E_PATHS = [
-    Path(r"C:\Users\fryassytest\Desktop\UT61xP - Shortcut.lnk"),
-    Path(r"C:\Users\fryassytest\App\UT61E+\UT61xP.exe")
-]
-
-# CONNECT button coordinates (relative to window top-left)
-# CONNECT_X = 180
-# CONNECT_Y = 80
-CONNECT_X = 50
-CONNECT_Y = 50
+# pywinauto for reliable Windows GUI automation
+from pywinauto import Application, Desktop
+from pywinauto.findwindows import ElementNotFoundError
+from pywinauto.timings import wait_until_passes
+import win32gui
+import win32con
 
 
+UT61E_BATCH = Path(r"C:\Files\element tester\Element_Tester\ut61xp_elevated.bat")
 
-log("="*70)
-log("AUTO-LAUNCH UT61E+ AND CONNECT")
-log("="*70)
+# Window title patterns to search for
+WINDOW_TITLES = ['UT61E+', 'UT61xP', 'Uni-T UT61E+', 'UT61E Plus']
 
-log("\n1. Searching for UT61E+ executable...")
-UT61E_EXE = None
-for path in UT61E_PATHS:
-    if path.exists():
-        UT61E_EXE = path
-        log(f"   ✓ Found: {UT61E_EXE}")
-        break
-
-if not UT61E_EXE:
-    log("   ❌ ERROR: UT61E+ executable not found!")
-    exit(1)
-
-# Step 2: Launch software FIRST (no mouse positioning yet)
-log(f"\n2. Launching UT61E+ software...")
-try:
-    process = subprocess.Popen([str(UT61E_EXE)], shell=True)
-    log("   ✓ Software launched")
-except Exception as e:
-    log(f"   ❌ ERROR: {e}")
-    exit(1)
-
-# Step 3: Wait for window to appear
-log("\n3. Waiting for window to load...")
-time.sleep(12)
-
-# Try to find the UT61E+ window
-log("   Searching for window...")
-windows = []
-for title in ['UT61E+', 'UT61xP', 'Uni-T UT61E+', 'UT61E Plus']:
-    windows = gw.getWindowsWithTitle(title)
-    if windows:
-        break
-
-if not windows:
-    # Try partial match
-    all_windows = gw.getAllWindows()
-    for w in all_windows:
-        if 'UT61' in w.title or 'Uni-T' in w.title:
-            windows = [w]
-            break
-
-if not windows:
-    log("   ❌ ERROR: UT61E+ window not found!")
-    log("   Available windows:")
-    for w in gw.getAllWindows()[:10]:  # Show first 10
-        log(f"     - {w.title}")
-    exit(1)
-
-window = windows[0]
-log(f"   ✓ Window found: '{window.title}' at ({window.left}, {window.top})")
-
-# Step 4: Click CONNECT button relative to window
-log(f"\n4. Clicking CONNECT button at relative position ({CONNECT_X}, {CONNECT_Y})...")
-click_x = window.left + CONNECT_X
-click_y = window.top + CONNECT_Y
-log(f"   Window position: left={window.left}, top={window.top}, width={window.width}, height={window.height}")
-log(f"   Calculated click position: ({click_x}, {click_y})")
-log(f"   Current mouse position before move: {pyautogui.position()}")
-
-# Activate the window
-window.activate()
-time.sleep(0.5)
-
-# Move mouse to position (with duration to see it)
-pyautogui.moveTo(click_x, click_y, duration=1.0)
-log(f"   Mouse moved to: {pyautogui.position()}")
-
-# Click
-pyautogui.click()
-log("   ✓ Clicked!")
-
-# Step 5: Wait for connection
-log("\n5. Waiting for meter connection...")
-time.sleep(3)
-log("   ✓ Connected")
-
-# Step 6: Minimize window
-log("\n6. Minimizing UT61E+ window...")
-window.minimize()
-log("   ✓ Minimized")
-
-log("\n" + "="*70)
-log("✅ UT61E+ RUNNING AND CONNECTED (MINIMIZED)")
-log("="*70)
-log("Software is running in background. Ready for HID reader.")
-log("\nPress Enter to close software, or Ctrl+C to leave running...")
+# Button text to look for (try multiple variations)
+CONNECT_BUTTON_TEXTS = ['Connect', 'CONNECT', '&Connect', 'connect']
 
 
-# No pause or prompt; script will just finish and leave UT61E+ running
+def minimize_all_windows():
+    """Minimize all windows using Windows API (like Win+D)."""
+    print("[DEBUG] Minimizing all windows...")
+    # Find the shell window and send minimize all command
+    shell = win32gui.FindWindow("Shell_TrayWnd", None)
+    win32gui.SendMessage(shell, win32con.WM_COMMAND, 419, 0)  # 419 = minimize all
+    time.sleep(0.5)
+    print("[DEBUG] All windows minimized.")
+
+
+def find_minimized_meter_window():
+    """
+    Find a minimized meter window using win32gui enumeration.
+    Returns the window handle if found, None otherwise.
+    """
+    found_hwnd = None
+    
+    def enum_callback(hwnd, _):
+        nonlocal found_hwnd
+        if win32gui.IsWindow(hwnd):
+            title = win32gui.GetWindowText(hwnd)
+            if title and any(pattern.lower() in title.lower() for pattern in ['UT61', 'Uni-T']):
+                print(f"[DEBUG] Found window via win32gui: '{title}' (hwnd={hwnd}, minimized={win32gui.IsIconic(hwnd)})")
+                found_hwnd = hwnd
+                return False  # Stop enumeration
+        return True
+    
+    try:
+        win32gui.EnumWindows(enum_callback, None)
+    except Exception:
+        pass  # EnumWindows raises when callback returns False
+    
+    return found_hwnd
+
+
+def restore_minimized_window(hwnd):
+    """Restore a minimized window given its handle."""
+    try:
+        if win32gui.IsIconic(hwnd):
+            print(f"[DEBUG] Window is minimized, restoring via win32gui...")
+            win32gui.ShowWindow(hwnd, win32con.SW_RESTORE)
+            time.sleep(0.5)
+        # Bring to foreground
+        win32gui.SetForegroundWindow(hwnd)
+        print(f"[DEBUG] Window restored and brought to foreground.")
+        return True
+    except Exception as e:
+        print(f"[ERROR] Failed to restore window: {e}")
+        return False
+
+
+def find_meter_window(timeout: float = 15.0) -> Application:
+    """
+    Find the meter application window, waiting up to timeout seconds.
+    Returns a pywinauto Application connected to the window.
+    Also handles minimized windows by restoring them.
+    """
+    print(f"[DEBUG] Searching for meter window (timeout: {timeout}s)...")
+    start_time = time.time()
+    
+    while time.time() - start_time < timeout:
+        # Search for window by title patterns
+        for title in WINDOW_TITLES:
+            try:
+                app = Application(backend='uia').connect(title_re=f".*{title}.*", timeout=1)
+                print(f"[DEBUG] Found window matching '{title}'")
+                return app
+            except ElementNotFoundError:
+                pass
+            except Exception as e:
+                # Connection failed, try next pattern
+                pass
+        
+        # Also try partial match on all windows
+        try:
+            desktop = Desktop(backend='uia')
+            for win in desktop.windows():
+                title = win.window_text()
+                if any(pattern.lower() in title.lower() for pattern in ['UT61', 'Uni-T']):
+                    app = Application(backend='uia').connect(handle=win.handle)
+                    print(f"[DEBUG] Found window: '{title}'")
+                    return app
+        except Exception:
+            pass
+        
+        # Check for minimized window that pywinauto might not see
+        hwnd = find_minimized_meter_window()
+        if hwnd:
+            print(f"[DEBUG] Found minimized/hidden window, attempting to restore...")
+            if restore_minimized_window(hwnd):
+                time.sleep(0.5)
+                # Now try to connect via pywinauto
+                try:
+                    app = Application(backend='uia').connect(handle=hwnd)
+                    print(f"[DEBUG] Successfully connected to restored window.")
+                    return app
+                except Exception as e:
+                    print(f"[DEBUG] Failed to connect after restore: {e}")
+        
+        time.sleep(0.5)
+    
+    return None
+
+
+def ensure_window_visible(app: Application):
+    """Make sure the window is restored (not minimized) and in foreground."""
+    try:
+        main_win = app.top_window()
+        title = main_win.window_text()
+        print(f"[DEBUG] Working with window: '{title}'")
+        
+        # Restore if minimized
+        if main_win.is_minimized():
+            print("[DEBUG] Window is minimized, restoring...")
+            main_win.restore()
+            time.sleep(0.3)
+        
+        # Bring to front
+        main_win.set_focus()
+        print("[DEBUG] Window focused and brought to front.")
+        time.sleep(0.5)
+        
+        return main_win
+    except Exception as e:
+        print(f"[ERROR] Failed to ensure window visible: {e}")
+        return None
+
+
+def click_connect_button(main_win) -> bool:
+    """
+    Find and click the Connect button using pywinauto.
+    Returns True if successful, False otherwise.
+    """
+    print("[DEBUG] Looking for Connect button...")
+    
+    # Method 1: Try to find button by text
+    for button_text in CONNECT_BUTTON_TEXTS:
+        try:
+            button = main_win.child_window(title=button_text, control_type="Button")
+            if button.exists(timeout=1):
+                print(f"[DEBUG] Found button with text '{button_text}', clicking...")
+                button.click_input()
+                print("[DEBUG] Clicked Connect button via control.")
+                return True
+        except Exception:
+            pass
+    
+    # Method 2: Try all buttons and look for one containing "connect"
+    try:
+        buttons = main_win.descendants(control_type="Button")
+        for btn in buttons:
+            btn_text = btn.window_text().lower()
+            if 'connect' in btn_text:
+                print(f"[DEBUG] Found button '{btn.window_text()}', clicking...")
+                btn.click_input()
+                print("[DEBUG] Clicked Connect button via search.")
+                return True
+    except Exception as e:
+        print(f"[DEBUG] Button search failed: {e}")
+    
+    # Method 3: Fallback to coordinate-based click (last resort)
+    print("[DEBUG] Button not found by control, falling back to coordinate click...")
+    try:
+        rect = main_win.rectangle()
+        # Click near top-left where Connect button typically is
+        click_x = rect.left + 50
+        click_y = rect.top + 50
+        
+        import pyautogui
+        pyautogui.click(click_x, click_y)
+        print(f"[DEBUG] Fallback click at ({click_x}, {click_y})")
+        return True
+    except Exception as e:
+        print(f"[ERROR] Fallback click failed: {e}")
+        return False
+
+
+def minimize_window(main_win):
+    """Minimize the meter application window."""
+    try:
+        print("[DEBUG] Minimizing meter window...")
+        main_win.minimize()
+        print("[DEBUG] Window minimized.")
+    except Exception as e:
+        print(f"[ERROR] Failed to minimize: {e}")
+
+
+def main():
+    # Step 1: Minimize all windows
+    minimize_all_windows()
+    
+    # Step 2: Find the already-running meter application window
+    # (Batch file launch removed - meter app should already be running)
+    print("[DEBUG] Looking for already-running meter window...")
+    app = find_meter_window(timeout=15.0)
+    
+    if app is None:
+        print("[ERROR] Could not find meter application window!")
+        sys.exit(1)
+    
+    # Step 4: Ensure window is visible and in foreground
+    main_win = ensure_window_visible(app)
+    if main_win is None:
+        print("[ERROR] Could not bring window to foreground!")
+        sys.exit(1)
+    
+    time.sleep(1)  # Brief pause before clicking
+    
+    # Step 5: Click the Connect button
+    if not click_connect_button(main_win):
+        print("[WARNING] Could not click Connect button!")
+    
+    # Step 6: Wait for connection to establish
+    print("[DEBUG] Waiting for connection...")
+    time.sleep(3)
+    
+    # Step 7: Minimize the meter window
+    minimize_window(main_win)
+    
+    print("[DEBUG] Done! Meter application running in background.")
+
+
+if __name__ == "__main__":
+    main()
