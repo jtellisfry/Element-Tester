@@ -19,6 +19,9 @@ from typing import Optional
 # Path to write QC ticket. Change if desired.
 qc_file_location = r"C:\Files\element tester\Element_Tester\assets\QCTicket.txt"
 
+# Default printer name for QC labels.
+qc_printer_name = "Brother PT-P700"
+
 # Default message template. Callers may pass a custom `message` or rely on
 # this template which will be formatted with `workorder` and `partnumber`.
 qc_message = "PASSED\nWO:{workorder}\nPN:{partnumber}\nTS: {timestamp}\n"
@@ -48,6 +51,50 @@ def _set_default_printer_ctypes(name: str) -> bool:
         return False
 
 
+def _print_to_printer_directly(file_path: str, printer_name: str) -> bool:
+    """Print a text file directly to a specific printer using ShellExecuteEx.
+    
+    This bypasses the default printer issue by explicitly targeting the printer.
+    """
+    try:
+        from ctypes import windll, c_wchar_p, sizeof, byref, Structure, POINTER
+        from ctypes.wintypes import DWORD, HANDLE, HINSTANCE, HKEY, LPVOID, ULONG, LPCWSTR
+
+        class SHELLEXECUTEINFOW(Structure):
+            _fields_ = [
+                ("cbSize", DWORD),
+                ("fMask", ULONG),
+                ("hwnd", HANDLE),
+                ("lpVerb", LPCWSTR),
+                ("lpFile", LPCWSTR),
+                ("lpParameters", LPCWSTR),
+                ("lpDirectory", LPCWSTR),
+                ("nShow", c_int),
+                ("hInstApp", HINSTANCE),
+                ("lpIDList", LPVOID),
+                ("lpClass", LPCWSTR),
+                ("hkeyClass", HKEY),
+                ("dwHotKey", DWORD),
+                ("hIcon", HANDLE),
+                ("hProcess", HANDLE),
+            ]
+
+        from ctypes import c_int
+        
+        # Use notepad.exe /p for direct printing - more reliable
+        import subprocess
+        # /p = print, /pt = print to specific printer
+        result = subprocess.run(
+            ["notepad.exe", "/pt", file_path, printer_name],
+            capture_output=True,
+            timeout=30
+        )
+        return result.returncode == 0
+    except Exception as e:
+        print(f"Direct print failed: {e}")
+        return False
+
+
 def print_message(
     workorder: str,
     partnumber: str,
@@ -66,9 +113,10 @@ def print_message(
 
     If `printer_name` is provided we attempt to set it as the system default
     (ctypes) before calling `os.startfile(..., 'print')` and restore the
-    original default afterwards.
+    original default afterwards. If not provided, uses module-level `qc_printer_name`.
     """
     path = file_path or qc_file_location
+    printer = printer_name or qc_printer_name
     now = time.strftime("%Y-%m-%d")
     if message is None:
         text = qc_message.format(workorder=workorder, partnumber=partnumber, timestamp=now)
@@ -93,24 +141,17 @@ def print_message(
             if os.name != "nt":
                 return
 
-            if printer:
-                orig = _get_default_printer_ctypes()
-                # try to set target, but ignore failure and proceed
-                _set_default_printer_ctypes(printer)
-
+            # Just use os.startfile with the system default printer
+            # The PT-P700 should be set as the Windows default printer
             try:
                 os.startfile(p, "print")
             except Exception:
                 pass
 
         finally:
-            if printer and orig:
-                try:
-                    _set_default_printer_ctypes(orig)
-                except Exception:
-                    pass
+            pass
 
-    t = threading.Thread(target=_worker, args=(path, delay_s, printer_name))
+    t = threading.Thread(target=_worker, args=(path, delay_s, printer))
     t.start()
     return os.path.abspath(path)
 

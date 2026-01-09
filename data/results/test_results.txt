@@ -88,3 +88,39 @@ Hypot Result: 01,ACW,PASS,1.24,2.285,2.0
 Measurement Result: LP1to6: 9.5 | LP2to5:  | LP3to4:  | RP1to6: 9.5 | RP2to5:  | RP3to4:
 Overall: PASS
 ------------------------------------------------------------
+Timestamp: 2026-01-09T07:51:16
+Mode: normal
+Work Order #: testing
+Part #: testing
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (9.1, 9.8)}
+Hypot Result: 01,ACW,PASS,1.24,2.292,2.0
+Measurement Result: LP1to6: 9.5 | LP2to5:  | LP3to4:  | RP1to6: 9.5 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2026-01-09T07:53:10
+Mode: normal
+Work Order #: 41617
+Part #: 8074598
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (9.1, 9.8)}
+Hypot Result: 01,ACW,PASS,1.24,2.288,2.0
+Measurement Result: LP1to6: 9.5 | LP2to5:  | LP3to4:  | RP1to6: 9.5 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2026-01-09T07:55:18
+Mode: normal
+Work Order #: 41617
+Part #: 8074598
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (9.1, 9.8)}
+Hypot Result: 01,ACW,PASS,1.24,2.288,2.0
+Measurement Result: LP1to6: 9.5 | LP2to5:  | LP3to4:  | RP1to6: 9.5 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2026-01-09T11:35:49
+Mode: normal
+Work Order #: testing
+Part #: testing
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.3)}
+Hypot Result: 01,ACW,PASS,1.24,2.957,2.0
+Measurement Result: LP1to6: 7.9 | LP2to5:  | LP3to4:  | RP1to6: 7.9 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
