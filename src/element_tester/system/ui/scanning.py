@@ -86,6 +86,27 @@ class ScanWindow(QtWidgets.QWidget):
         btn_row.addStretch(1)
         root.addLayout(btn_row)
 
+        # ---- Revision Date (bottom left) ----
+        revision_row = QtWidgets.QHBoxLayout()
+        self.revision_label = QtWidgets.QLabel("Last Revision: January 9, 2026")
+        self.revision_label.setStyleSheet(
+            """
+            QLabel {
+                background-color: #FFFFFF;
+                color: #000000;
+                padding: 4px 8px;
+                border: 1px solid #CCCCCC;
+                border-radius: 4px;
+            }
+            """
+        )
+        f = self.revision_label.font()
+        f.setPointSize(10)
+        self.revision_label.setFont(f)
+        revision_row.addWidget(self.revision_label)
+        revision_row.addStretch(1)
+        root.addLayout(revision_row)
+
         QtCore.QTimer.singleShot(0, self.work_edit.setFocus)
 
     # ---------------- Helpers ----------------

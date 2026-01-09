@@ -80,7 +80,7 @@ class UT61EDriver:
             self.log.error(f"Error during UT61E shutdown: {e}")
 
     # ---- Reading methods ----
-    def read_value(self, max_retries: int = 3) -> MeterReading:
+    def read_value(self, max_retries: int = 10) -> MeterReading:
         """
         Read current displayed value (whatever mode meter is in).
         

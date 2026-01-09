@@ -753,6 +753,11 @@ class TestRunner:
                         self.log.error(f"MEAS: Failed to close relays for {config_name}: {e}", exc_info=True)
                         raise
                     
+                    # Wait 2 seconds for relay to settle before reading
+                    self.log.info(f"MEAS: Waiting 2 seconds for relay to settle...")
+                    time.sleep(2.0)
+                    QtWidgets.QApplication.processEvents()
+                    
                     # Flush buffer
                     self.log.info(f"MEAS: Flushing meter buffer for {config_name}")
                     try:
@@ -768,16 +773,25 @@ class TestRunner:
                     QtWidgets.QApplication.processEvents()  # Keep UI responsive
                     
                     import threading
-                    result_holder = {"reading": None, "done": False}
+                    result_holder = {"reading": None, "done": False, "success": False}
                     
-                    def _do_read():
-                        try:
-                            result_holder["reading"] = self.meter_driver.read_value()
-                        except Exception as e:
-                            self.log.error(f"MEAS: Read error: {e}")
+                    def _do_read_with_retry(max_time=10.0):
+                        """Keep trying to read until we get a valid result or timeout."""
+                        start = time.time()
+                        while (time.time() - start) < max_time:
+                            try:
+                                reading = self.meter_driver.read_value()
+                                if reading is not None and reading.value is not None:
+                                    result_holder["reading"] = reading
+                                    result_holder["success"] = True
+                                    result_holder["done"] = True
+                                    return
+                            except Exception as e:
+                                self.log.debug(f"MEAS: Read attempt failed: {e}")
+                            time.sleep(0.5)  # Brief pause between retries
                         result_holder["done"] = True
                     
-                    read_thread = threading.Thread(target=_do_read, daemon=True)
+                    read_thread = threading.Thread(target=_do_read_with_retry, args=(10.0,), daemon=True)
                     read_thread.start()
                     
                     # Wait up to 10 seconds total for this position
@@ -847,6 +861,11 @@ class TestRunner:
                         self.log.info(f"MEAS: Relays opened successfully")
                     except Exception as e:
                         self.log.error(f"MEAS: Failed to open relays: {e}", exc_info=True)
+                    
+                    # Buffer delay before next measurement
+                    self.log.info(f"MEAS: Waiting 1 second before next measurement...")
+                    time.sleep(1.0)
+                    QtWidgets.QApplication.processEvents()
                     
                 except Exception as e:
                     self.log.error(f"MEAS: CRITICAL ERROR measuring {config_name}: {e}", exc_info=True)

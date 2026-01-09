@@ -63,7 +63,7 @@ def close_pin1to6(
         relay_driver.all_off()
         time.sleep(0.1)
         relay_driver.set_relay(4, True)  # Meter position (relay 5, bit 4)
-        time.sleep(0.3)  # Brief settling delay
+        time.sleep(3)  # Brief settling delay
         time.sleep(delay_ms / 1000.0)
         log.info(f"RELAY: Pin1to6 closed with {delay_ms}ms settling delay")
     except Exception as e:
@@ -259,6 +259,7 @@ def run_measurement_sequence(
         with concurrent.futures.ThreadPoolExecutor(max_workers=1) as ex:
             fut = ex.submit(meter_read_callback)
             try:
+                time.sleep(2)
                 return fut.result(timeout=timeout_s)
             except concurrent.futures.TimeoutError:
                 log.error(f"Measurement read timed out after {timeout_s} seconds")
