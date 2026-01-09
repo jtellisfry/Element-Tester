@@ -1,0 +1,74 @@
+
+==================================================
+Timestamp: 2026-01-09
+sys.frozen: True
+sys.executable: C:\Files\element tester\Element_Tester\dist\ElementTester\ElementTester.exe
+os.getcwd(): C:\Files\element tester\Element_Tester\dist\ElementTester
+File path: C:\Files\element tester\Element_Tester\assets\QCTicket.txt
+Printer: Brother PT-P700
+Text to print (44 chars):
+PASSED
+WO:testing
+PN:testing
+TS: 2026-01-09
+
+File exists: True, size: 48 bytes
+File content verification (44 chars):
+PASSED
+WO:testing
+PN:testing
+TS: 2026-01-09
+
+_worker: About to call os.startfile('C:\\Files\\element tester\\Element_Tester\\assets\\QCTicket.txt', 'print')
+_worker: File exists before print: True
+_worker: File size: 48
+_worker: os.startfile completed successfully
+
+==================================================
+Timestamp: 2026-01-09
+sys.frozen: False
+sys.executable: C:\Program Files\Python313\python.exe
+os.getcwd(): C:\Files\element tester\Element_Tester
+File path: C:\Files\element tester\Element_Tester\assets\QCTicket.txt
+Printer: Brother PT-P700
+Text to print (50 chars):
+PASSED
+WO:VSCODE_TEST
+PN:VSCODE_PN
+TS: 2026-01-09
+
+File exists: True, size: 54 bytes
+File content verification (50 chars):
+PASSED
+WO:VSCODE_TEST
+PN:VSCODE_PN
+TS: 2026-01-09
+
+_worker: About to call os.startfile('C:\\Files\\element tester\\Element_Tester\\assets\\QCTicket.txt', 'print')
+_worker: File exists before print: True
+_worker: File size: 54
+_worker: os.startfile completed successfully
+
+==================================================
+Timestamp: 2026-01-09
+sys.frozen: True
+sys.executable: C:\Files\element tester\Element_Tester\dist\ElementTester\ElementTester.exe
+os.getcwd(): C:\Files\element tester\Element_Tester\dist\ElementTester
+File path: C:\Files\element tester\Element_Tester\assets\QCTicket.txt
+Printer: Brother PT-P700
+Text to print (44 chars):
+PASSED
+WO:testing
+PN:testing
+TS: 2026-01-09
+
+File exists: True, size: 48 bytes
+File content verification (44 chars):
+PASSED
+WO:testing
+PN:testing
+TS: 2026-01-09
+
+_worker: Using win32 GDI print method
+_worker: Printer: Brother PT-P700
+_worker: win32 GDI print result: True

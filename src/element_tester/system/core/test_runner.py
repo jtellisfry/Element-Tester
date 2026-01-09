@@ -1070,6 +1070,41 @@ if __name__ == "__main__":
 
     app = QtWidgets.QApplication(sys.argv)
 
+    # Force dark mode for the application - this affects child processes like Notepad
+    # Set Windows app to prefer dark mode via registry
+    try:
+        import winreg
+        key_path = r"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
+        try:
+            key = winreg.OpenKey(winreg.HKEY_CURRENT_USER, key_path, 0, winreg.KEY_SET_VALUE)
+            # AppsUseLightTheme: 0 = Dark, 1 = Light
+            winreg.SetValueEx(key, "AppsUseLightTheme", 0, winreg.REG_DWORD, 0)
+            winreg.CloseKey(key)
+        except Exception:
+            pass
+    except Exception:
+        pass
+
+    # Apply dark palette to PyQt6 application
+    from PyQt6.QtGui import QPalette, QColor
+    from PyQt6.QtCore import Qt
+    dark_palette = QPalette()
+    dark_palette.setColor(QPalette.ColorRole.Window, QColor(53, 53, 53))
+    dark_palette.setColor(QPalette.ColorRole.WindowText, QColor(255, 255, 255))
+    dark_palette.setColor(QPalette.ColorRole.Base, QColor(35, 35, 35))
+    dark_palette.setColor(QPalette.ColorRole.AlternateBase, QColor(53, 53, 53))
+    dark_palette.setColor(QPalette.ColorRole.ToolTipBase, QColor(25, 25, 25))
+    dark_palette.setColor(QPalette.ColorRole.ToolTipText, QColor(255, 255, 255))
+    dark_palette.setColor(QPalette.ColorRole.Text, QColor(255, 255, 255))
+    dark_palette.setColor(QPalette.ColorRole.Button, QColor(53, 53, 53))
+    dark_palette.setColor(QPalette.ColorRole.ButtonText, QColor(255, 255, 255))
+    dark_palette.setColor(QPalette.ColorRole.BrightText, QColor(255, 0, 0))
+    dark_palette.setColor(QPalette.ColorRole.Link, QColor(42, 130, 218))
+    dark_palette.setColor(QPalette.ColorRole.Highlight, QColor(42, 130, 218))
+    dark_palette.setColor(QPalette.ColorRole.HighlightedText, QColor(35, 35, 35))
+    app.setPalette(dark_palette)
+    app.setStyleSheet("QToolTip { color: #ffffff; background-color: #2a82da; border: 1px solid white; }")
+
     # Default to hardware mode; enable simulate only when --simulate provided.
     runner = TestRunner(simulate=bool(args.simulate))
 

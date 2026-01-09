@@ -85,7 +85,7 @@
  [],
  False,
  False,
- 1767980447,
+ 1767984350,
  [('runw.exe',
    'C:\\Files\\element '
    'tester\\Element_Tester\\.venv\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\runw.exe',
