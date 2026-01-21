@@ -3,6 +3,8 @@ This will be a program for the Frymaster Element Tester to test the high potenti
 
 ## Important Testing Information
 - This program uses UT61xP for communicating with a meter so that it can get the resistance readings.
+- The point below doesn't work at the moment because the UT61xP application is UAC protected and I haven't found a way around that to open it
+  
 - There is logic in the Task Scheduler where it opens the UT61xP application with the heightened privileges and then theres another scheduled task that runs the "launch_and_connect.py" python file
   - If this doesn't happen or something interrupts it then it won't measure correctly (but there will be logic in the fail message for when this occurs to inform)
 
