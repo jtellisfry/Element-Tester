@@ -1,0 +1,638 @@
+Timestamp: 2025-12-03T14:48:36
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Operator cancelled before starting tests
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-03T16:03:03
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Simulated Hipot PASS (FL 1)
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-03T16:03:11
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Simulated Hipot PASS (FL 1)
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-03T16:06:39
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Simulated Hipot PASS (FL 1)
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-03T16:09:51
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Simulated Hipot PASS (FL 1)
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-03T16:12:54
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Simulated Hipot PASS (FL 1)
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-03T16:14:37
+Mode: normal
+Work Order #: 12345
+Part #: 108999
+Hypot Result: Simulated Hipot PASS (FL 1)
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-03T16:18:31
+Mode: normal
+Work Order #: 12345
+Part #: 1111111
+Hypot Result: Simulated Hipot PASS (FL 1)
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-03T16:22:25
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-03T16:24:29
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-03T16:28:12
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-04T07:58:19
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6 | LP2to5: 7 | LP3to4: 6 | RP1to6: 6 | RP2to5: 7 | RP3to4: 6
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-04T08:13:42
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Exception: Hipot test execution failed: Quick run failed: 'AR3865Commands' object has no attribute 'cmd_start_test'
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T08:24:18
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: ASSOCIATED RESEARCH INC.,3865,9841198,Version 2.03.00
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T08:30:19
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: 
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T08:35:23
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: 
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T09:53:01
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: 
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T09:57:36
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: 
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T10:06:28
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: ASSOCIATED RESEARCH INC.,3865,9841198,Version 2.03.00
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T10:07:38
+Mode: normal
+Work Order #: 11111
+Part #: 1089999
+Hypot Result: 
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T10:20:05
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: ASSOCIATED RESEARCH INC.,3865,9841198,Version 2.03.00
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T10:29:09
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: 
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T10:31:38
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: 
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T10:40:39
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: ASSOCIATED RESEARCH INC.,3865,9841198,Version 2.03.00
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T10:41:27
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: 
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T11:03:54
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: Exception: Hipot test execution failed: Run from file failed: 'AR3865Commands' object has no attribute 'cmd_read_result'
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T11:09:15
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: 
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-04T11:10:50
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Hypot Result: ASSOCIATED RESEARCH INC.,3865,9841198,Version 2.03.00
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T08:49:35
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: 
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-10T10:41:13
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-10T10:42:05
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-10T10:47:44
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-10T10:54:01
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-10T10:58:12
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-10T11:02:45
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-10T11:04:27
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-10T11:14:39
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (0.0, 0.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T11:16:23
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (0.0, 0.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T11:21:45
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (0.0, 0.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T11:25:27
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (0.0, 0.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T11:27:58
+Mode: normal
+Work Order #: AUTO_WO
+Part #: AUTO_PN
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (5.0, 8.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T11:32:38
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: 
+Hypot Result: Operator cancelled before starting tests
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T11:42:57
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (8.0, 8.9)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T12:53:52
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (5.0, 8.9)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T12:57:46
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (5.0, 8.9)}
+Hypot Result: 01,ACW,PASS,1.24,0.003,2.0
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T13:26:46
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (5.0, 8.9)}
+Hypot Result: 01,ACW,PASS,1.24,0.004,2.0
+Measurement Result: LP1to6: 44.5 | LP2to5:  | LP3to4:  | RP1to6: 44.5 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T13:37:50
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (5.0, 8.9)}
+Hypot Result: 01,ACW,PASS,1.24,0.004,2.0
+Measurement Result: LP1to6: 44.8 | LP2to5:  | LP3to4:  | RP1to6: 44.8 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T13:53:38
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 7000, 'resistance_range': (5.0, 8.9)}
+Hypot Result: 01,ACW,PASS,1.24,0.004,2.0
+Measurement Result: LP1to6: 44.7 | LP2to5:  | LP3to4:  | RP1to6: 44.7 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T14:20:07
+Mode: normal
+Work Order #: 1234
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.4, 7.6)}
+Hypot Result: 01,ACW,PASS,1.24,0.002,2.0
+Measurement Result: LP1to6: 32.3 | LP2to5:  | LP3to4:  | RP1to6: 32.3 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T14:29:14
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.002,2.0
+Measurement Result: LP1to6: 31.4 | LP2to5:  | LP3to4:  | RP1to6: 31.4 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T14:34:02
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.002,2.0
+Measurement Result: LP1to6: 32.4 | LP2to5:  | LP3to4:  | RP1to6: 32.4 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T15:46:13
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.002,2.0
+Measurement Result: LP1to6: 31.7 | LP2to5:  | LP3to4:  | RP1to6: 31.7 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T15:50:36
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.002,2.0
+Measurement Result: LP1to6: 31.7 | LP2to5:  | LP3to4:  | RP1to6: 31.7 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T15:52:58
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.002,2.0
+Measurement Result: LP1to6: 32.4 | LP2to5:  | LP3to4:  | RP1to6: 32.4 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-10T15:55:34
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.002,2.0
+Measurement Result: LP1to6: 31.6 | LP2to5:  | LP3to4:  | RP1to6: 31.6 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-12T07:00:46
+Mode: normal
+Work Order #: 10
+Part #: 102
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.002,2.0
+Measurement Result: LP1to6: 31.9 | LP2to5:  | LP3to4:  | RP1to6: 31.9 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-15T14:47:50
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-15T14:47:56
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 115, 'wattage': 7000, 'resistance_range': (0.0, 0.0)}
+Hypot Result: Operator cancelled before starting tests
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-15T14:56:26
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Operator cancelled before starting tests
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:01:13
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Operator cancelled before starting tests
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:01:37
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:12:49
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:17:16
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:18:58
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:23:57
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:24:07
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Operator cancelled before starting tests
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:26:59
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Operator cancelled before starting tests
+Measurement Result: LP1to6:  | LP2to5:  | LP3to4:  | RP1to6:  | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:27:18
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:29:02
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (5.0, 10.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-15T15:32:05
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: Simulated Hipot PASS
+Measurement Result: LP1to6: 6.0 | LP2to5:  | LP3to4:  | RP1to6: 6.0 | RP2to5:  | RP3to4:
+Overall: FAIL
+------------------------------------------------------------
+Timestamp: 2025-12-21T15:16:03
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.002,2.0
+Measurement Result: LP1to6: 7.8 | LP2to5:  | LP3to4:  | RP1to6: 7.8 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-21T15:22:33
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.003,2.0
+Measurement Result: LP1to6: 7.8 | LP2to5:  | LP3to4:  | RP1to6: 7.8 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-21T15:34:17
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.002,2.0
+Measurement Result: LP1to6: 7.8 | LP2to5:  | LP3to4:  | RP1to6: 7.8 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
+Timestamp: 2025-12-22T07:17:41
+Mode: normal
+Work Order #: 12345
+Part #: 1089999
+Configuration: {'voltage': 208, 'wattage': 8500, 'resistance_range': (7.5, 8.0)}
+Hypot Result: 01,ACW,PASS,1.24,0.003,2.0
+Measurement Result: LP1to6: 7.8 | LP2to5:  | LP3to4:  | RP1to6: 7.8 | RP2to5:  | RP3to4:
+Overall: PASS
+------------------------------------------------------------
