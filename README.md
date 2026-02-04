@@ -9,6 +9,7 @@ This will be a program for the Frymaster Element Tester to test the high potenti
   - If this doesn't happen or something interrupts it then it won't measure correctly (but there will be logic in the fail message for when this occurs to inform)
 
 ## Installing and deploying this program
+- Install python version 3.13
 - Go to this location in your command prompt or open it in your coding environment (VSCode, etc.) and find it in your File Explorer
   - cd "C:\Files\element tester\Element_Tester"
 - When installing on a fresh computer there should NOT be a ".venv" folder at the top and if there is then delete it
