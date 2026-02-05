@@ -14,7 +14,7 @@ This will be a program for the Frymaster Element Tester to test the high potenti
   - cd "C:\Files\element tester\Element_Tester"
 - When installing on a fresh computer there should NOT be a ".venv" folder at the top and if there is then delete it
   - Reinitialize it with "python -m venv .venv" in the terminal
-  - Then you will have to install the requirements.txt file with the command "pip install requirements.txt"
+  - Then you will have to install the requirements.txt file with the command "pip install -r requirements.txt"
 - BELOW shows you have to rebuild or do the initial build for the executable version of the program
   - If you want to bring it to the desktop, simply create a shortcut and put it on the desktop, do not remove the main file
 
